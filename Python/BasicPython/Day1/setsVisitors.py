@@ -10,5 +10,8 @@ visitor_ids.add(101)
 # Add a new ID to the set
 visitor_ids.add(104)
 
+# Add a new ID to the set
+visitor_ids.add(105)
+
 print("\nSet after adding duplicate (101) and new ID (104):")
 print(sorted(visitor_ids))
