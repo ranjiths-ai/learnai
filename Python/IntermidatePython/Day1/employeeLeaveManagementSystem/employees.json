@@ -1,0 +1,36 @@
+{
+    "employees": [
+        {
+            "employeeid": 1001,
+            "first_name": "Annes",
+            "last_name": "Moats",
+            "dob": "1995-01-02",
+            "phone_number": "1245672112",
+            "dateof_join": "2023-01-01",
+            "total_leaves": 20,
+            "pending_leaves": 18,
+            "address": "Apt 2259, Hedson Drive, New Houston, Houston ,Texas, 087721"
+        },
+        {
+            "employeeid": 1002,
+            "first_name": "James",
+            "last_name": "Young",
+            "dob": "1985-01-16",
+            "phone_number": "6777765678",
+            "dateof_join": "2026-01-06",
+            "total_leaves": 20,
+            "pending_leaves": 20,
+            "address": "8901 Celina Drive, Plano, Texas, 083221"
+        }
+    ],
+    "leave_requests": [
+        {
+            "request_id": 1,
+            "employeeid": 1001,
+            "name": "Annes Moats",
+            "requested_days": 2,
+            "reason": "sleep",
+            "status": "Approved"
+        }
+    ]
+}
