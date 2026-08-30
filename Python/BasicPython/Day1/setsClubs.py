@@ -1,5 +1,5 @@
 # Create two sets: "Chess Club" and "Math Club"
-chess_club = {"Alice", "Bob", "Charlie", "David"}
+chess_club = {"Alice", "Bob", "Charlie", "David", "Emma"}
 math_club = {"Bob", "David", "Emma", "Frank"}
 
 # Use intersection to find students in both clubs

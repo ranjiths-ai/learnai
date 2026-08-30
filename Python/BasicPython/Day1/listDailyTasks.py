@@ -37,7 +37,7 @@ print(f"Added new task: '{new_task}'")
 print("Updated Task List:", daily_tasks)
 print("-" * 40)
 
-new_task = "Give a Project demo to clients"
+new_task = "Give a Project demo to client"
 daily_tasks.append(new_task)
 print(f"Added new task: '{new_task}'")
 print("Updated Task List:", daily_tasks)

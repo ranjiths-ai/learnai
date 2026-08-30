@@ -1,15 +1,15 @@
 # Create a phonebook dictionary with initial entries
-phonebook = {"Jessica": "111-0101", "Mathew": "111-0102", "Charlie": "111-0103"}
+phonebook = {"Marjuri": "111-0101", "James": "111-0102", "Charlie": "111-0103"}
 
 # Demonstrate fast lookup by name
-lookup_name = "Mathew"
+lookup_name = "James"
 print(f"Lookup result for '{lookup_name}': {phonebook[lookup_name]}")
 
-print("\nPhonebook before updating Mathew's number:")
+print("\nPhonebook before updating Jame number:")
 print(phonebook)
 
-# Overwrite Mathew's phone number
-phonebook["Mathew"] = "111-9999"
+# Overwrite James's phone number
+phonebook["James"] = "111-9999"
 
-print("\nPhonebook after overwriting Mathew's number:")
+print("\nPhonebook after overwriting James's number:")
 print(phonebook)

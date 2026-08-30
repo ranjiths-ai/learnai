@@ -1,5 +1,5 @@
 # Create a tuple of fixed menu items
-menu_items = ("Pizza", "Burger", "Pasta")
+menu_items = ("Pizza", "Burger", "Pasta", "Taco", "nachos")
 
 print("Fixed Menu Items:", menu_items)
 

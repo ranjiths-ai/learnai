@@ -1,5 +1,5 @@
 # Define 2D coordinates as a tuple (x, y)
-point = (10, 20)
+point = (5, 10)
 
 print("Original Point:", point)
 print(f"X coordinate: {point[0]}, Y coordinate: {point[1]}")
