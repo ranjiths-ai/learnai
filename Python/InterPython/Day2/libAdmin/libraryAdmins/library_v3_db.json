@@ -1,0 +1,83 @@
+{
+    "users": {
+        "admin": {
+            "password": "admin",
+            "role": "admin",
+            "status": "Active",
+            "name": "Super User"
+        },
+        "David": {
+            "password": "david",
+            "role": "user",
+            "status": "Active",
+            "name": "David Oranto"
+        },
+        "Jain": {
+            "password": "jain",
+            "role": "user",
+            "status": "Active",
+            "name": "Jain Malohtra"
+        }
+    },
+    "books": {
+        "1001": {
+            "title": "Test",
+            "author": "tes",
+            "cat": "History",
+            "status": "Available"
+        },
+        "1002": {
+            "title": "teer",
+            "author": "adde",
+            "cat": "Fiction",
+            "status": "Available"
+        },
+        "1003": {
+            "title": "reatr",
+            "author": "rte",
+            "cat": "Fiction",
+            "status": "Checked Out"
+        },
+        "1004": {
+            "title": "rty",
+            "author": "g",
+            "cat": "Fiction",
+            "status": "Checked Out"
+        },
+        "1005": {
+            "title": "wer",
+            "author": "rewe",
+            "cat": "History",
+            "status": "Available"
+        },
+        "1006": {
+            "title": "rty",
+            "author": "tyu",
+            "cat": "Fiction",
+            "status": "Available"
+        }
+    },
+    "transactions": [
+        {
+            "user": "David",
+            "bid": "1004",
+            "title": "rty",
+            "status": "Borrowed"
+        },
+        {
+            "user": "David",
+            "bid": "1003",
+            "title": "reatr",
+            "status": "Pending Approval"
+        },
+        {
+            "user": "David",
+            "bid": "1006",
+            "title": "rty",
+            "status": "Returned"
+        }
+    ],
+    "metadata": {
+        "last_isbn": 1006
+    }
+}

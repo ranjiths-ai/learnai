@@ -1,0 +1,9 @@
+# Local Python virtual environment files
+Lib/
+Scripts/
+Include/
+share/
+etc/
+__pycache__/
+*.py[cod]
+pyvenv.cfg
