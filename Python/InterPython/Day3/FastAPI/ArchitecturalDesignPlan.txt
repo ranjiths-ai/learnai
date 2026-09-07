@@ -1,0 +1,30 @@
+┌────────────────────────────────────────────────────────────────────────┐
+│                   Pre-Login Screen (Sidebar Suppressed)                │
+│                                                                        │
+│   ┌───────────────────────────┐      ┌───────────────────────────┐     │
+│   │        Tab 1: Login       │      │ Tab 2: Register New User  │     │
+│   ├───────────────────────────┤      ├───────────────────────────┤     │
+│   │ • User ID or Email        │      │ • Full Name               │     │
+│   │ • Password (masked)       │      │ • Email Address           │     │
+│   │                           │      │ • Password & Confirm Pwd  │     │
+│   │ [ Submit ]  [ Reset 🔄 ]  │      │ • Phone Number (Optional) │     │
+│   └───────────────────────────┘      │                           │     │
+│                                      │ [ Register ] [ Reset 🔄 ] │     │
+│                                      └───────────────────────────┘     │
+│                                                                        │
+│   ⛔ (st.stop() blocks all sidebar & navigation until authenticated)   │
+└───────────────────────────────────┬────────────────────────────────────┘
+                                    │ Successful Authentication
+                                    ▼
+┌────────────────────────────────────────────────────────────────────────┐
+│                Post-Login Dashboard & Left Navigation                  │
+│       • Role-based menu (Admin vs Patron)                              │
+│       • Reset buttons available across interactive forms               │
+└────────────────────────────────────────────────────────────────────────┘
+
+. Security & Pre-Login Navigation Gating
+Strict Session Gate: In Streamlit, if st.session_state["authenticated"] is False, the app renders only the login box in the main view and executes st.stop(). The sidebar and navigation menus are never rendered prior to authentication.
+Role-Based Access Control (RBAC): Once logged in, the user's role (admin or patron) dynamically configures the sidebar menu items. Privileged actions (such as inspecting returns, adding catalog items, and triggering backups) are strictly isolated to admin.
+2. Minimal Backend Changes
+No changes to LibrarySystem, dataclasses, business rules, or validation algorithms.
+A single lightweight endpoint (POST /auth/login) is added to FastAPI to verify user identity (by User ID or Email) and return user role details to Streamlit.
