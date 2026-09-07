@@ -1,0 +1,60 @@
+{
+  "books": [
+    {
+      "id": "BK-1",
+      "title": "Jeans",
+      "author": "Jerry",
+      "status": "Available",
+      "is_borrowed": false,
+      "due": null
+    },
+    {
+      "id": "BK-2",
+      "title": "Pepe",
+      "author": "Vecori",
+      "status": "Available",
+      "is_borrowed": false,
+      "due": null
+    },
+    {
+      "id": "BK-3",
+      "title": "Nasty boy",
+      "author": "Boys",
+      "status": "Available",
+      "is_borrowed": false,
+      "due": null
+    },
+    {
+      "id": "BK-4",
+      "title": "Text book for grade 1",
+      "author": "Graders",
+      "status": "Available",
+      "is_borrowed": false,
+      "due": null
+    },
+    {
+      "id": "BK-5",
+      "title": "Hammy",
+      "author": "tummy",
+      "status": "Available",
+      "is_borrowed": false,
+      "due": null
+    }
+  ],
+  "members": [
+    {
+      "id": "M1",
+      "name": "admin",
+      "pass": "admin",
+      "books": [],
+      "is_admin": true
+    },
+    {
+      "id": "M2",
+      "name": "David",
+      "pass": "david",
+      "books": [],
+      "is_admin": false
+    }
+  ]
+}

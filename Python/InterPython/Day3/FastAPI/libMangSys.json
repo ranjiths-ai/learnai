@@ -1,0 +1,1354 @@
+{
+  "metadata": {
+    "system": "LibraryManagementSystem",
+    "version": "1.0",
+    "exported_at": "2026-09-07T13:38:35.041165",
+    "counters": {
+      "user_seq": 20,
+      "admin_seq": 2,
+      "patron_seq": 20,
+      "loan_seq": 38,
+      "reservation_seq": 2,
+      "report_seq": 4
+    }
+  },
+  "users": {
+    "A001": {
+      "user_id": "A001",
+      "name": "Chief Librarian Eleanor Vance",
+      "email": "eleanor@citylibrary.org",
+      "password_hash": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9",
+      "role": "admin",
+      "phone": "+1-555-0100",
+      "is_blocked": false,
+      "registered_at": "2026-09-01T08:00:00",
+      "notifications": []
+    },
+    "A002": {
+      "user_id": "A002",
+      "name": "Marcus Aurelius Admin",
+      "email": "marcus.admin@citylibrary.org",
+      "password_hash": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9",
+      "role": "admin",
+      "phone": "+1-555-0109",
+      "is_blocked": false,
+      "registered_at": "2026-09-01T08:30:00",
+      "notifications": []
+    },
+    "U0001": {
+      "user_id": "U0001",
+      "name": "Ada Lovelace",
+      "email": "ada@computing.org",
+      "password_hash": "080f732e09f4a6b86878423a60561e87e814571f7069399cb3614578ef151560",
+      "role": "patron",
+      "phone": "+1-555-0101",
+      "is_blocked": false,
+      "registered_at": "2026-09-01T09:00:00",
+      "notifications": [
+        "[2026-09-02 10:15] Checked out 'Introduction to Algorithms (CLRS)' (Loan ID: LN-00001). Due by 2026-09-23 10:15.",
+        "[2026-09-07 12:25] Checked out 'Design Patterns: Elements of Reusable Object-Oriented Software' (Loan ID: LN-00031). Due by 2026-09-21 12:25.",
+        "[2026-09-07 12:30] Checked out 'Head First Design Patterns' (Loan ID: LN-00032). Due by 2026-09-08 12:30.",
+        "[2026-09-07 12:31] Checked out 'Atomic Habits: An Easy & Proven Way to Build Good Habits' (Loan ID: LN-00033). Due by 2026-09-08 12:31.",
+        "[2026-09-07 13:13] Checked out 'Clean Architecture: A Craftsman's Guide to Software Structure' (Loan ID: LN-00034). Due by 2026-09-21 13:13.",
+        "[2026-09-07 13:19] Your return for 'Introduction to Algorithms (CLRS)' (Loan LN-00001) was approved by Admin Chief Librarian Eleanor Vance. Overdue fine assessed: USD 14.00."
+      ]
+    },
+    "U0002": {
+      "user_id": "U0002",
+      "name": "Alan Turing",
+      "email": "alan@enigma.org",
+      "password_hash": "080f732e09f4a6b86878423a60561e87e814571f7069399cb3614578ef151560",
+      "role": "patron",
+      "phone": "+1-555-0102",
+      "is_blocked": false,
+      "registered_at": "2026-09-01T09:15:00",
+      "notifications": [
+        "[2026-09-05 14:00] Placed hold on 'The Mathematical Theory of Communication' (Hold ID: RES-00001).",
+        "[2026-09-07 13:16] Checked out 'Pride and Prejudice' (Loan ID: LN-00035). Due by 2026-09-09 13:16.",
+        "[2026-09-07 13:22] Checked out 'Crime and Punishment' (Loan ID: LN-00036). Due by 2026-09-09 13:22.",
+        "[2026-09-07 13:25] Checked out 'Clean Code: A Handbook of Agile Software Craftsmanship' (Loan ID: LN-00037). Due by 2026-09-11 13:25.",
+        "[2026-09-07 13:28] Your return for 'Clean Code: A Handbook of Agile Software Craftsmanship' (Loan LN-00019) was approved by Admin Marcus Aurelius Admin. No fines assessed.",
+        "[2026-09-07 13:36] Checked out 'The Great Gatsby' (Loan ID: LN-00038). Due by 2026-09-11 13:36.",
+        "[2026-09-07 13:38] Your return for 'Crime and Punishment' (Loan LN-00036) was approved by Admin Marcus Aurelius Admin. Overdue fine assessed: USD 15.00."
+      ]
+    },
+    "U0003": {
+      "user_id": "U0003",
+      "name": "Grace Hopper",
+      "email": "grace@navy.mil",
+      "password_hash": "080f732e09f4a6b86878423a60561e87e814571f7069399cb3614578ef151560",
+      "role": "patron",
+      "phone": "+1-555-0103",
+      "is_blocked": false,
+      "registered_at": "2026-09-01T09:30:00",
+      "notifications": []
+    },
+    "U0004": {
+      "user_id": "U0004",
+      "name": "John Pits",
+      "email": "johnpits@gmail.com",
+      "password_hash": "080f732e09f4a6b86878423a60561e87e814571f7069399cb3614578ef151560",
+      "role": "patron",
+      "phone": "+1-555-0104",
+      "is_blocked": false,
+      "registered_at": "2026-09-01T10:00:00",
+      "notifications": []
+    },
+    "U0005": {
+      "user_id": "U0005",
+      "name": "Claude Shannon",
+      "email": "claude@bell-labs.com",
+      "password_hash": "080f732e09f4a6b86878423a60561e87e814571f7069399cb3614578ef151560",
+      "role": "patron",
+      "phone": "+1-555-0105",
+      "is_blocked": false,
+      "registered_at": "2026-09-01T10:30:00",
+      "notifications": []
+    },
+    "U0006": {
+      "user_id": "U0006",
+      "name": "Margaret Hamilton",
+      "email": "margaret@apollo.nasa.gov",
+      "password_hash": "080f732e09f4a6b86878423a60561e87e814571f7069399cb3614578ef151560",
+      "role": "patron",
+      "phone": "+1-555-0106",
+      "is_blocked": false,
+      "registered_at": "2026-09-01T11:00:00",
+      "notifications": []
+    },
+    "U0007": {
+      "user_id": "U0007",
+      "name": "Linus Torvalds",
+      "email": "linus@kernel.org",
+      "password_hash": "080f732e09f4a6b86878423a60561e87e814571f7069399cb3614578ef151560",
+      "role": "patron",
+      "phone": "+1-555-0107",
+      "is_blocked": false,
+      "registered_at": "2026-09-01T11:30:00",
+      "notifications": []
+    },
+    "U0008": {
+      "user_id": "U0008",
+      "name": "Donald Knuth",
+      "email": "knuth@stanford.edu",
+      "password_hash": "080f732e09f4a6b86878423a60561e87e814571f7069399cb3614578ef151560",
+      "role": "patron",
+      "phone": "+1-555-0108",
+      "is_blocked": false,
+      "registered_at": "2026-09-01T12:00:00",
+      "notifications": []
+    },
+    "U0009": {
+      "user_id": "U0009",
+      "name": "Ken Thompson",
+      "email": "ken@unix.org",
+      "password_hash": "080f732e09f4a6b86878423a60561e87e814571f7069399cb3614578ef151560",
+      "role": "patron",
+      "phone": "+1-555-0110",
+      "is_blocked": false,
+      "registered_at": "2026-09-01T12:30:00",
+      "notifications": []
+    },
+    "U0010": {
+      "user_id": "U0010",
+      "name": "Dennis Ritchie",
+      "email": "dmr@bell-labs.com",
+      "password_hash": "080f732e09f4a6b86878423a60561e87e814571f7069399cb3614578ef151560",
+      "role": "patron",
+      "phone": "+1-555-0111",
+      "is_blocked": false,
+      "registered_at": "2026-09-01T13:00:00",
+      "notifications": [
+        "Account has been blocked by admin Chief Librarian Eleanor Vance on 2026-09-07 13:12.",
+        "[2026-09-07 13:26] Your return for 'The C Programming Language' (Loan LN-00010) was approved by Admin Marcus Aurelius Admin. Overdue fine assessed: USD 1.50.",
+        "Account has been unblocked by admin Marcus Aurelius Admin on 2026-09-07 13:29."
+      ]
+    },
+    "U0011": {
+      "user_id": "U0011",
+      "name": "Barbara Liskov",
+      "email": "liskov@mit.edu",
+      "password_hash": "080f732e09f4a6b86878423a60561e87e814571f7069399cb3614578ef151560",
+      "role": "patron",
+      "phone": "+1-555-0112",
+      "is_blocked": true,
+      "registered_at": "2026-09-01T13:30:00",
+      "notifications": [
+        "Account has been blocked by admin Marcus Aurelius Admin on 2026-09-07 13:29."
+      ]
+    },
+    "U0012": {
+      "user_id": "U0012",
+      "name": "Edsger Dijkstra",
+      "email": "dijkstra@utexas.edu",
+      "password_hash": "080f732e09f4a6b86878423a60561e87e814571f7069399cb3614578ef151560",
+      "role": "patron",
+      "phone": "+1-555-0113",
+      "is_blocked": false,
+      "registered_at": "2026-09-01T14:00:00",
+      "notifications": []
+    },
+    "U0013": {
+      "user_id": "U0013",
+      "name": "Tim Berners-Lee",
+      "email": "timbl@w3c.org",
+      "password_hash": "080f732e09f4a6b86878423a60561e87e814571f7069399cb3614578ef151560",
+      "role": "patron",
+      "phone": "+1-555-0114",
+      "is_blocked": false,
+      "registered_at": "2026-09-01T14:30:00",
+      "notifications": [
+        "[2026-09-07 13:19] Good news! Reserved book 'Introduction to Algorithms (CLRS)' is now available for checkout. Claim Hold ID: RES-00002."
+      ]
+    },
+    "U0014": {
+      "user_id": "U0014",
+      "name": "Guido van Rossum",
+      "email": "guido@python.org",
+      "password_hash": "080f732e09f4a6b86878423a60561e87e814571f7069399cb3614578ef151560",
+      "role": "patron",
+      "phone": "+1-555-0115",
+      "is_blocked": false,
+      "registered_at": "2026-09-01T15:00:00",
+      "notifications": []
+    },
+    "U0015": {
+      "user_id": "U0015",
+      "name": "Katherine Johnson",
+      "email": "katherine@nasa.gov",
+      "password_hash": "080f732e09f4a6b86878423a60561e87e814571f7069399cb3614578ef151560",
+      "role": "patron",
+      "phone": "+1-555-0116",
+      "is_blocked": false,
+      "registered_at": "2026-09-01T15:30:00",
+      "notifications": []
+    },
+    "U0016": {
+      "user_id": "U0016",
+      "name": "Leslie Lamport",
+      "email": "lamport@microsoft.com",
+      "password_hash": "080f732e09f4a6b86878423a60561e87e814571f7069399cb3614578ef151560",
+      "role": "patron",
+      "phone": "+1-555-0117",
+      "is_blocked": false,
+      "registered_at": "2026-09-01T16:00:00",
+      "notifications": [
+        "[2026-09-07 13:28] Your return for 'G\u00f6del, Escher, Bach: An Eternal Golden Braid' (Loan LN-00016) was approved by Admin Marcus Aurelius Admin. No fines assessed."
+      ]
+    },
+    "U0017": {
+      "user_id": "U0017",
+      "name": "Radia Perlman",
+      "email": "radia@stp.org",
+      "password_hash": "080f732e09f4a6b86878423a60561e87e814571f7069399cb3614578ef151560",
+      "role": "patron",
+      "phone": "+1-555-0118",
+      "is_blocked": false,
+      "registered_at": "2026-09-01T16:30:00",
+      "notifications": []
+    },
+    "U0018": {
+      "user_id": "U0018",
+      "name": "John von Neumann",
+      "email": "neumann@ias.edu",
+      "password_hash": "080f732e09f4a6b86878423a60561e87e814571f7069399cb3614578ef151560",
+      "role": "patron",
+      "phone": "+1-555-0119",
+      "is_blocked": false,
+      "registered_at": "2026-09-01T17:00:00",
+      "notifications": [
+        "Account has been blocked by admin Chief Librarian Eleanor Vance on 2026-09-04 11:00.",
+        "Account has been unblocked by admin Chief Librarian Eleanor Vance on 2026-09-07 13:12."
+      ]
+    },
+    "U0019": {
+      "user_id": "U0019",
+      "name": "David Oranto",
+      "email": "david@oranto.com",
+      "password_hash": "6e753a6b0a37cd1032c991ba167cee596db9adca33162ea9e48a0ba86c4daed3",
+      "role": "patron",
+      "phone": null,
+      "is_blocked": false,
+      "registered_at": "2026-09-07T12:32:53.574363",
+      "notifications": []
+    },
+    "U0020": {
+      "user_id": "U0020",
+      "name": "David Orlando",
+      "email": "david@orant.com",
+      "password_hash": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9",
+      "role": "patron",
+      "phone": null,
+      "is_blocked": false,
+      "registered_at": "2026-09-07T13:12:59.523361",
+      "notifications": []
+    }
+  },
+  "catalog": {
+    "9780132350884": {
+      "isbn": "9780132350884",
+      "title": "Clean Code: A Handbook of Agile Software Craftsmanship",
+      "author": "Robert C. Martin",
+      "total_copies": 4,
+      "available_copies": 3,
+      "category": "Computer Science",
+      "published_year": 2008,
+      "tags": [
+        "Architecture",
+        "Best Practices",
+        "Refactoring"
+      ]
+    },
+    "9780201616224": {
+      "isbn": "9780201616224",
+      "title": "The Pragmatic Programmer: Your Journey to Mastery",
+      "author": "David Thomas, Andrew Hunt",
+      "total_copies": 3,
+      "available_copies": 2,
+      "category": "Computer Science",
+      "published_year": 1999,
+      "tags": [
+        "Career",
+        "Craftsmanship",
+        "Productivity"
+      ]
+    },
+    "9780262033848": {
+      "isbn": "9780262033848",
+      "title": "Introduction to Algorithms (CLRS)",
+      "author": "Thomas H. Cormen et al.",
+      "total_copies": 2,
+      "available_copies": 1,
+      "category": "Computer Science",
+      "published_year": 2009,
+      "tags": [
+        "Algorithms",
+        "Data Structures",
+        "Theory"
+      ]
+    },
+    "9780134494166": {
+      "isbn": "9780134494166",
+      "title": "Clean Architecture: A Craftsman's Guide to Software Structure",
+      "author": "Robert C. Martin",
+      "total_copies": 3,
+      "available_copies": 2,
+      "category": "Computer Science",
+      "published_year": 2017,
+      "tags": [
+        "Architecture",
+        "Design Patterns",
+        "SOLID"
+      ]
+    },
+    "9780596007126": {
+      "isbn": "9780596007126",
+      "title": "Head First Design Patterns",
+      "author": "Eric Freeman, Elisabeth Robson",
+      "total_copies": 3,
+      "available_copies": 2,
+      "category": "Computer Science",
+      "published_year": 2004,
+      "tags": [
+        "Design Patterns",
+        "OOP",
+        "Java"
+      ]
+    },
+    "9780131103627": {
+      "isbn": "9780131103627",
+      "title": "The C Programming Language",
+      "author": "Brian W. Kernighan, Dennis M. Ritchie",
+      "total_copies": 2,
+      "available_copies": 1,
+      "category": "Computer Science",
+      "published_year": 1988,
+      "tags": [
+        "C",
+        "Systems",
+        "Classics"
+      ]
+    },
+    "9780201633610": {
+      "isbn": "9780201633610",
+      "title": "Design Patterns: Elements of Reusable Object-Oriented Software",
+      "author": "Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides",
+      "total_copies": 2,
+      "available_copies": 0,
+      "category": "Computer Science",
+      "published_year": 1994,
+      "tags": [
+        "GoF",
+        "OOP",
+        "Architecture"
+      ]
+    },
+    "9781449355730": {
+      "isbn": "9781449355730",
+      "title": "Learning Python",
+      "author": "Mark Lutz",
+      "total_copies": 3,
+      "available_copies": 3,
+      "category": "Computer Science",
+      "published_year": 2013,
+      "tags": [
+        "Python",
+        "Programming",
+        "Reference"
+      ]
+    },
+    "9781593279288": {
+      "isbn": "9781593279288",
+      "title": "Python Crash Course: A Hands-On, Project-Based Introduction",
+      "author": "Eric Matthes",
+      "total_copies": 4,
+      "available_copies": 3,
+      "category": "Computer Science",
+      "published_year": 2019,
+      "tags": [
+        "Python",
+        "Beginner",
+        "Projects"
+      ]
+    },
+    "9780134685991": {
+      "isbn": "9780134685991",
+      "title": "Effective Java",
+      "author": "Joshua Bloch",
+      "total_copies": 2,
+      "available_copies": 2,
+      "category": "Computer Science",
+      "published_year": 2018,
+      "tags": [
+        "Java",
+        "Best Practices"
+      ]
+    },
+    "9780262510875": {
+      "isbn": "9780262510875",
+      "title": "Structure and Interpretation of Computer Programs (SICP)",
+      "author": "Harold Abelson, Gerald Jay Sussman",
+      "total_copies": 2,
+      "available_copies": 2,
+      "category": "Computer Science",
+      "published_year": 1996,
+      "tags": [
+        "Lisp",
+        "Compilers",
+        "Foundations"
+      ]
+    },
+    "9781491957660": {
+      "isbn": "9781491957660",
+      "title": "Designing Data-Intensive Applications",
+      "author": "Martin Kleppmann",
+      "total_copies": 3,
+      "available_copies": 2,
+      "category": "Computer Science",
+      "published_year": 2017,
+      "tags": [
+        "Distributed Systems",
+        "Databases",
+        "Big Data"
+      ]
+    },
+    "9780321751041": {
+      "isbn": "9780321751041",
+      "title": "The Art of Computer Programming, Vol 1: Fundamental Algorithms",
+      "author": "Donald E. Knuth",
+      "total_copies": 2,
+      "available_copies": 2,
+      "category": "Computer Science",
+      "published_year": 1997,
+      "tags": [
+        "Algorithms",
+        "Mathematics",
+        "Classics"
+      ]
+    },
+    "9780135957059": {
+      "isbn": "9780135957059",
+      "title": "The Pragmatic Programmer: 20th Anniversary Edition",
+      "author": "David Thomas, Andrew Hunt",
+      "total_copies": 3,
+      "available_copies": 3,
+      "category": "Computer Science",
+      "published_year": 2019,
+      "tags": [
+        "Career",
+        "Best Practices"
+      ]
+    },
+    "9780596517748": {
+      "isbn": "9780596517748",
+      "title": "JavaScript: The Good Parts",
+      "author": "Douglas Crockford",
+      "total_copies": 2,
+      "available_copies": 2,
+      "category": "Computer Science",
+      "published_year": 2008,
+      "tags": [
+        "JavaScript",
+        "Web",
+        "Frontend"
+      ]
+    },
+    "9781491950296": {
+      "isbn": "9781491950296",
+      "title": "Fluent Python: Clear, Concise, and Effective Programming",
+      "author": "Luciano Ramalho",
+      "total_copies": 3,
+      "available_copies": 2,
+      "category": "Computer Science",
+      "published_year": 2015,
+      "tags": [
+        "Python",
+        "Advanced",
+        "Idiomatic"
+      ]
+    },
+    "9780132778046": {
+      "isbn": "9780132778046",
+      "title": "Artificial Intelligence: A Modern Approach",
+      "author": "Stuart Russell, Peter Norvig",
+      "total_copies": 2,
+      "available_copies": 1,
+      "category": "Computer Science",
+      "published_year": 2020,
+      "tags": [
+        "AI",
+        "Machine Learning",
+        "Search"
+      ]
+    },
+    "9780691124186": {
+      "isbn": "9780691124186",
+      "title": "The Mathematical Theory of Communication",
+      "author": "Claude E. Shannon, Warren Weaver",
+      "total_copies": 1,
+      "available_copies": 0,
+      "category": "Mathematics",
+      "published_year": 1949,
+      "tags": [
+        "Information Theory",
+        "Math",
+        "Foundational"
+      ]
+    },
+    "9780385495325": {
+      "isbn": "9780385495325",
+      "title": "The Demon-Haunted World: Science as a Candle in the Dark",
+      "author": "Carl Sagan",
+      "total_copies": 3,
+      "available_copies": 3,
+      "category": "Science",
+      "published_year": 1996,
+      "tags": [
+        "Science",
+        "Philosophy",
+        "Skepticism"
+      ]
+    },
+    "9780451524935": {
+      "isbn": "9780451524935",
+      "title": "1984",
+      "author": "George Orwell",
+      "total_copies": 4,
+      "available_copies": 4,
+      "category": "Literature",
+      "published_year": 1949,
+      "tags": [
+        "Dystopia",
+        "Classics",
+        "Fiction"
+      ]
+    },
+    "9780061120084": {
+      "isbn": "9780061120084",
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "total_copies": 3,
+      "available_copies": 3,
+      "category": "Literature",
+      "published_year": 1960,
+      "tags": [
+        "Classics",
+        "Drama"
+      ]
+    },
+    "9780743273565": {
+      "isbn": "9780743273565",
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "total_copies": 3,
+      "available_copies": 2,
+      "category": "Literature",
+      "published_year": 1925,
+      "tags": [
+        "American Literature",
+        "Classics"
+      ]
+    },
+    "9780441172719": {
+      "isbn": "9780441172719",
+      "title": "Dune",
+      "author": "Frank Herbert",
+      "total_copies": 4,
+      "available_copies": 3,
+      "category": "Science Fiction",
+      "published_year": 1965,
+      "tags": [
+        "SciFi",
+        "Epic",
+        "Space Opera"
+      ]
+    },
+    "9780345391803": {
+      "isbn": "9780345391803",
+      "title": "The Hitchhiker's Guide to the Galaxy",
+      "author": "Douglas Adams",
+      "total_copies": 3,
+      "available_copies": 3,
+      "category": "Science Fiction",
+      "published_year": 1979,
+      "tags": [
+        "Humor",
+        "SciFi",
+        "Space"
+      ]
+    },
+    "9780553293357": {
+      "isbn": "9780553293357",
+      "title": "Foundation",
+      "author": "Isaac Asimov",
+      "total_copies": 3,
+      "available_copies": 3,
+      "category": "Science Fiction",
+      "published_year": 1951,
+      "tags": [
+        "SciFi",
+        "Psychohistory",
+        "Empire"
+      ]
+    },
+    "9780141439518": {
+      "isbn": "9780141439518",
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "total_copies": 3,
+      "available_copies": 2,
+      "category": "Literature",
+      "published_year": 1813,
+      "tags": [
+        "Romance",
+        "Classics",
+        "Regency"
+      ]
+    },
+    "9780142437230": {
+      "isbn": "9780142437230",
+      "title": "Moby-Dick",
+      "author": "Herman Melville",
+      "total_copies": 2,
+      "available_copies": 2,
+      "category": "Literature",
+      "published_year": 1851,
+      "tags": [
+        "Adventure",
+        "Classics",
+        "Sea"
+      ]
+    },
+    "9780140449136": {
+      "isbn": "9780140449136",
+      "title": "Crime and Punishment",
+      "author": "Fyodor Dostoevsky",
+      "total_copies": 2,
+      "available_copies": 2,
+      "category": "Literature",
+      "published_year": 1866,
+      "tags": [
+        "Psychological",
+        "Classics",
+        "Russian"
+      ]
+    },
+    "9780060935467": {
+      "isbn": "9780060935467",
+      "title": "One Hundred Years of Solitude",
+      "author": "Gabriel Garcia Marquez",
+      "total_copies": 3,
+      "available_copies": 3,
+      "category": "Literature",
+      "published_year": 1967,
+      "tags": [
+        "Magical Realism",
+        "Classics"
+      ]
+    },
+    "9780679783268": {
+      "isbn": "9780679783268",
+      "title": "The Metamorphosis",
+      "author": "Franz Kafka",
+      "total_copies": 2,
+      "available_copies": 2,
+      "category": "Literature",
+      "published_year": 1915,
+      "tags": [
+        "Existential",
+        "Classics",
+        "Novella"
+      ]
+    },
+    "9780385504201": {
+      "isbn": "9780385504201",
+      "title": "The Da Vinci Code",
+      "author": "Dan Brown",
+      "total_copies": 4,
+      "available_copies": 4,
+      "category": "Mystery",
+      "published_year": 2003,
+      "tags": [
+        "Thriller",
+        "Mystery",
+        "Conspiracy"
+      ]
+    },
+    "9780307387899": {
+      "isbn": "9780307387899",
+      "title": "The Road",
+      "author": "Cormac McCarthy",
+      "total_copies": 2,
+      "available_copies": 2,
+      "category": "Literature",
+      "published_year": 2006,
+      "tags": [
+        "Post-Apocalyptic",
+        "Pulitzer",
+        "Fiction"
+      ]
+    },
+    "9780375756788": {
+      "isbn": "9780375756788",
+      "title": "G\u00f6del, Escher, Bach: An Eternal Golden Braid",
+      "author": "Douglas R. Hofstadter",
+      "total_copies": 2,
+      "available_copies": 2,
+      "category": "Philosophy",
+      "published_year": 1979,
+      "tags": [
+        "Cognitive Science",
+        "Logic",
+        "Pulitzer"
+      ]
+    },
+    "9780062316097": {
+      "isbn": "9780062316097",
+      "title": "Sapiens: A Brief History of Humankind",
+      "author": "Yuval Noah Harari",
+      "total_copies": 4,
+      "available_copies": 4,
+      "category": "History",
+      "published_year": 2014,
+      "tags": [
+        "Anthropology",
+        "Evolution",
+        "Civilization"
+      ]
+    },
+    "9780143127741": {
+      "isbn": "9780143127741",
+      "title": "Thinking, Fast and Slow",
+      "author": "Daniel Kahneman",
+      "total_copies": 3,
+      "available_copies": 3,
+      "category": "Psychology",
+      "published_year": 2011,
+      "tags": [
+        "Behavioral Economics",
+        "Cognitive Bias"
+      ]
+    },
+    "9780393351378": {
+      "isbn": "9780393351378",
+      "title": "The Information: A History, A Theory, A Flood",
+      "author": "James Gleick",
+      "total_copies": 2,
+      "available_copies": 1,
+      "category": "Science",
+      "published_year": 2011,
+      "tags": [
+        "Information Theory",
+        "History",
+        "Technology"
+      ]
+    },
+    "9780735211292": {
+      "isbn": "9780735211292",
+      "title": "Atomic Habits: An Easy & Proven Way to Build Good Habits",
+      "author": "James Clear",
+      "total_copies": 5,
+      "available_copies": 3,
+      "category": "Self-Help",
+      "published_year": 2018,
+      "tags": [
+        "Habits",
+        "Productivity",
+        "Personal Development"
+      ]
+    },
+    "9780812968255": {
+      "isbn": "9780812968255",
+      "title": "Man's Search for Meaning",
+      "author": "Viktor E. Frankl",
+      "total_copies": 3,
+      "available_copies": 2,
+      "category": "Philosophy",
+      "published_year": 1946,
+      "tags": [
+        "Psychology",
+        "Existentialism",
+        "Holocaust"
+      ]
+    },
+    "9780140449266": {
+      "isbn": "9780140449266",
+      "title": "Meditations",
+      "author": "Marcus Aurelius",
+      "total_copies": 3,
+      "available_copies": 3,
+      "category": "Philosophy",
+      "published_year": 2002,
+      "tags": [
+        "Stoicism",
+        "Philosophy",
+        "Classics"
+      ]
+    },
+    "9780140449495": {
+      "isbn": "9780140449495",
+      "title": "The Republic",
+      "author": "Plato",
+      "total_copies": 3,
+      "available_copies": 3,
+      "category": "Philosophy",
+      "published_year": 2003,
+      "tags": [
+        "Philosophy",
+        "Politics",
+        "Ancient Greece"
+      ]
+    },
+    "9781583279288": {
+      "isbn": "9781583279288",
+      "title": "Tom and Jerry",
+      "author": "Tom",
+      "total_copies": 5,
+      "available_copies": 5,
+      "category": "Comic",
+      "published_year": 2025,
+      "tags": [
+        "Comic",
+        "funn"
+      ]
+    },
+    "9788583279288": {
+      "isbn": "9788583279288",
+      "title": "Toms catglog",
+      "author": "catglog",
+      "total_copies": 1,
+      "available_copies": 1,
+      "category": "Comic",
+      "published_year": 2026,
+      "tags": [
+        "Comic"
+      ]
+    },
+    "9788683279288": {
+      "isbn": "9788683279288",
+      "title": "Tommy catalog",
+      "author": "Tommy",
+      "total_copies": 1,
+      "available_copies": 1,
+      "category": "Comic",
+      "published_year": 2026,
+      "tags": [
+        "Fun"
+      ]
+    }
+  },
+  "loans": {
+    "LN-00001": {
+      "loan_id": "LN-00001",
+      "user_id": "U0001",
+      "isbn": "9780262033848",
+      "issue_date": "2026-09-02 10:15",
+      "due_date": "2026-09-23 10:15",
+      "loan_days": 21,
+      "return_status": "RETURNED",
+      "return_date": "2026-09-07 12:31",
+      "approved_by_admin": "A001",
+      "fine_amount": 14.0
+    },
+    "LN-00002": {
+      "loan_id": "LN-00002",
+      "user_id": "U0002",
+      "isbn": "9780132350884",
+      "issue_date": "2026-08-10 09:00",
+      "due_date": "2026-08-24 09:00",
+      "loan_days": 14,
+      "return_status": "RETURNED",
+      "return_date": "2026-08-23 16:30",
+      "approved_by_admin": "A001",
+      "fine_amount": 0.0
+    },
+    "LN-00003": {
+      "loan_id": "LN-00003",
+      "user_id": "U0003",
+      "isbn": "9780201616224",
+      "issue_date": "2026-09-03 11:30",
+      "due_date": "2026-09-24 11:30",
+      "loan_days": 21,
+      "return_status": "ISSUED",
+      "return_date": null,
+      "approved_by_admin": null,
+      "fine_amount": 0.0
+    },
+    "LN-00004": {
+      "loan_id": "LN-00004",
+      "user_id": "U0004",
+      "isbn": "9781491957660",
+      "issue_date": "2026-09-04 14:00",
+      "due_date": "2026-09-25 14:00",
+      "loan_days": 21,
+      "return_status": "ISSUED",
+      "return_date": null,
+      "approved_by_admin": null,
+      "fine_amount": 0.0
+    },
+    "LN-00005": {
+      "loan_id": "LN-00005",
+      "user_id": "U0005",
+      "isbn": "9780691124186",
+      "issue_date": "2026-09-02 12:00",
+      "due_date": "2026-09-16 12:00",
+      "loan_days": 14,
+      "return_status": "ISSUED",
+      "return_date": null,
+      "approved_by_admin": null,
+      "fine_amount": 0.0
+    },
+    "LN-00006": {
+      "loan_id": "LN-00006",
+      "user_id": "U0006",
+      "isbn": "9780134494166",
+      "issue_date": "2026-08-01 10:00",
+      "due_date": "2026-08-15 10:00",
+      "loan_days": 14,
+      "return_status": "RETURNED",
+      "return_date": "2026-08-14 15:45",
+      "approved_by_admin": "A001",
+      "fine_amount": 0.0
+    },
+    "LN-00007": {
+      "loan_id": "LN-00007",
+      "user_id": "U0007",
+      "isbn": "9780131103627",
+      "issue_date": "2026-09-01 16:20",
+      "due_date": "2026-09-15 16:20",
+      "loan_days": 14,
+      "return_status": "ISSUED",
+      "return_date": null,
+      "approved_by_admin": null,
+      "fine_amount": 0.0
+    },
+    "LN-00008": {
+      "loan_id": "LN-00008",
+      "user_id": "U0008",
+      "isbn": "9780321751041",
+      "issue_date": "2026-08-05 13:00",
+      "due_date": "2026-08-19 13:00",
+      "loan_days": 14,
+      "return_status": "RETURNED",
+      "return_date": "2026-08-18 10:20",
+      "approved_by_admin": "A001",
+      "fine_amount": 0.0
+    },
+    "LN-00009": {
+      "loan_id": "LN-00009",
+      "user_id": "U0009",
+      "isbn": "9780201633610",
+      "issue_date": "2026-09-05 09:10",
+      "due_date": "2026-09-26 09:10",
+      "loan_days": 21,
+      "return_status": "ISSUED",
+      "return_date": null,
+      "approved_by_admin": null,
+      "fine_amount": 0.0
+    },
+    "LN-00010": {
+      "loan_id": "LN-00010",
+      "user_id": "U0010",
+      "isbn": "9780131103627",
+      "issue_date": "2026-08-20 14:00",
+      "due_date": "2026-09-03 14:00",
+      "loan_days": 14,
+      "return_status": "RETURNED",
+      "return_date": "2026-09-07 10:00",
+      "approved_by_admin": "A002",
+      "fine_amount": 1.5
+    },
+    "LN-00011": {
+      "loan_id": "LN-00011",
+      "user_id": "U0011",
+      "isbn": "9781491950296",
+      "issue_date": "2026-09-04 15:30",
+      "due_date": "2026-09-18 15:30",
+      "loan_days": 14,
+      "return_status": "ISSUED",
+      "return_date": null,
+      "approved_by_admin": null,
+      "fine_amount": 0.0
+    },
+    "LN-00012": {
+      "loan_id": "LN-00012",
+      "user_id": "U0012",
+      "isbn": "9780262033848",
+      "issue_date": "2026-09-03 09:40",
+      "due_date": "2026-09-24 09:40",
+      "loan_days": 21,
+      "return_status": "ISSUED",
+      "return_date": null,
+      "approved_by_admin": null,
+      "fine_amount": 0.0
+    },
+    "LN-00013": {
+      "loan_id": "LN-00013",
+      "user_id": "U0013",
+      "isbn": "9780596517748",
+      "issue_date": "2026-08-12 11:15",
+      "due_date": "2026-08-26 11:15",
+      "loan_days": 14,
+      "return_status": "RETURNED",
+      "return_date": "2026-08-28 12:00",
+      "approved_by_admin": "A001",
+      "fine_amount": 1.0
+    },
+    "LN-00014": {
+      "loan_id": "LN-00014",
+      "user_id": "U0014",
+      "isbn": "9781593279288",
+      "issue_date": "2026-09-06 13:00",
+      "due_date": "2026-09-27 13:00",
+      "loan_days": 21,
+      "return_status": "ISSUED",
+      "return_date": null,
+      "approved_by_admin": null,
+      "fine_amount": 0.0
+    },
+    "LN-00015": {
+      "loan_id": "LN-00015",
+      "user_id": "U0015",
+      "isbn": "9780062316097",
+      "issue_date": "2026-08-15 10:30",
+      "due_date": "2026-08-29 10:30",
+      "loan_days": 14,
+      "return_status": "RETURNED",
+      "return_date": "2026-08-29 09:15",
+      "approved_by_admin": "A002",
+      "fine_amount": 0.0
+    },
+    "LN-00016": {
+      "loan_id": "LN-00016",
+      "user_id": "U0016",
+      "isbn": "9780375756788",
+      "issue_date": "2026-08-25 14:20",
+      "due_date": "2026-09-08 14:20",
+      "loan_days": 14,
+      "return_status": "RETURNED",
+      "return_date": "2026-09-07 11:30",
+      "approved_by_admin": "A002",
+      "fine_amount": 0.0
+    },
+    "LN-00017": {
+      "loan_id": "LN-00017",
+      "user_id": "U0017",
+      "isbn": "9780441172719",
+      "issue_date": "2026-09-05 16:00",
+      "due_date": "2026-09-19 16:00",
+      "loan_days": 14,
+      "return_status": "ISSUED",
+      "return_date": null,
+      "approved_by_admin": null,
+      "fine_amount": 0.0
+    },
+    "LN-00018": {
+      "loan_id": "LN-00018",
+      "user_id": "U0001",
+      "isbn": "9780140449266",
+      "issue_date": "2026-08-11 09:00",
+      "due_date": "2026-08-25 09:00",
+      "loan_days": 14,
+      "return_status": "RETURNED",
+      "return_date": "2026-08-24 16:00",
+      "approved_by_admin": "A001",
+      "fine_amount": 0.0
+    },
+    "LN-00019": {
+      "loan_id": "LN-00019",
+      "user_id": "U0002",
+      "isbn": "9780132350884",
+      "issue_date": "2026-09-06 10:00",
+      "due_date": "2026-09-20 10:00",
+      "loan_days": 14,
+      "return_status": "RETURNED",
+      "return_date": "2026-09-07 13:17",
+      "approved_by_admin": "A002",
+      "fine_amount": 0.0
+    },
+    "LN-00020": {
+      "loan_id": "LN-00020",
+      "user_id": "U0003",
+      "isbn": "9780451524935",
+      "issue_date": "2026-08-01 15:00",
+      "due_date": "2026-08-15 15:00",
+      "loan_days": 14,
+      "return_status": "RETURNED",
+      "return_date": "2026-08-14 11:20",
+      "approved_by_admin": "A001",
+      "fine_amount": 0.0
+    },
+    "LN-00021": {
+      "loan_id": "LN-00021",
+      "user_id": "U0004",
+      "isbn": "9780735211292",
+      "issue_date": "2026-09-05 11:45",
+      "due_date": "2026-09-26 11:45",
+      "loan_days": 21,
+      "return_status": "ISSUED",
+      "return_date": null,
+      "approved_by_admin": null,
+      "fine_amount": 0.0
+    },
+    "LN-00022": {
+      "loan_id": "LN-00022",
+      "user_id": "U0005",
+      "isbn": "9780345391803",
+      "issue_date": "2026-08-10 13:10",
+      "due_date": "2026-08-24 13:10",
+      "loan_days": 14,
+      "return_status": "RETURNED",
+      "return_date": "2026-08-23 15:00",
+      "approved_by_admin": "A002",
+      "fine_amount": 0.0
+    },
+    "LN-00023": {
+      "loan_id": "LN-00023",
+      "user_id": "U0006",
+      "isbn": "9780393351378",
+      "issue_date": "2026-08-20 12:00",
+      "due_date": "2026-09-03 12:00",
+      "loan_days": 14,
+      "return_status": "PENDING_APPROVAL",
+      "return_date": "2026-09-07 09:30",
+      "approved_by_admin": null,
+      "fine_amount": 0.0
+    },
+    "LN-00024": {
+      "loan_id": "LN-00024",
+      "user_id": "U0007",
+      "isbn": "9780141439518",
+      "issue_date": "2026-08-14 16:30",
+      "due_date": "2026-08-28 16:30",
+      "loan_days": 14,
+      "return_status": "RETURNED",
+      "return_date": "2026-08-27 10:15",
+      "approved_by_admin": "A001",
+      "fine_amount": 0.0
+    },
+    "LN-00025": {
+      "loan_id": "LN-00025",
+      "user_id": "U0008",
+      "isbn": "9780143127741",
+      "issue_date": "2026-08-08 14:00",
+      "due_date": "2026-08-22 14:00",
+      "loan_days": 14,
+      "return_status": "RETURNED",
+      "return_date": "2026-08-22 13:50",
+      "approved_by_admin": "A002",
+      "fine_amount": 0.0
+    },
+    "LN-00026": {
+      "loan_id": "LN-00026",
+      "user_id": "U0009",
+      "isbn": "9780132778046",
+      "issue_date": "2026-08-22 10:00",
+      "due_date": "2026-09-05 10:00",
+      "loan_days": 14,
+      "return_status": "PENDING_APPROVAL",
+      "return_date": "2026-09-07 10:45",
+      "approved_by_admin": null,
+      "fine_amount": 0.0
+    },
+    "LN-00027": {
+      "loan_id": "LN-00027",
+      "user_id": "U0010",
+      "isbn": "9780553293357",
+      "issue_date": "2026-08-15 11:00",
+      "due_date": "2026-08-29 11:00",
+      "loan_days": 14,
+      "return_status": "RETURNED",
+      "return_date": "2026-08-28 14:00",
+      "approved_by_admin": "A001",
+      "fine_amount": 0.0
+    },
+    "LN-00028": {
+      "loan_id": "LN-00028",
+      "user_id": "U0011",
+      "isbn": "9780061120084",
+      "issue_date": "2026-08-05 10:00",
+      "due_date": "2026-08-19 10:00",
+      "loan_days": 14,
+      "return_status": "RETURNED",
+      "return_date": "2026-08-21 16:00",
+      "approved_by_admin": "A001",
+      "fine_amount": 1.0
+    },
+    "LN-00029": {
+      "loan_id": "LN-00029",
+      "user_id": "U0012",
+      "isbn": "9780812968255",
+      "issue_date": "2026-09-06 14:00",
+      "due_date": "2026-09-27 14:00",
+      "loan_days": 21,
+      "return_status": "ISSUED",
+      "return_date": null,
+      "approved_by_admin": null,
+      "fine_amount": 0.0
+    },
+    "LN-00030": {
+      "loan_id": "LN-00030",
+      "user_id": "U0013",
+      "isbn": "9780743273565",
+      "issue_date": "2026-08-16 15:30",
+      "due_date": "2026-08-30 15:30",
+      "loan_days": 14,
+      "return_status": "RETURNED",
+      "return_date": "2026-08-30 11:00",
+      "approved_by_admin": "A002",
+      "fine_amount": 0.0
+    },
+    "LN-00031": {
+      "loan_id": "LN-00031",
+      "user_id": "U0001",
+      "isbn": "9780201633610",
+      "issue_date": "2026-09-07 12:25",
+      "due_date": "2026-09-21 12:25",
+      "loan_days": 14,
+      "return_status": "ISSUED",
+      "return_date": null,
+      "approved_by_admin": null,
+      "fine_amount": 0.0
+    },
+    "LN-00032": {
+      "loan_id": "LN-00032",
+      "user_id": "U0001",
+      "isbn": "9780596007126",
+      "issue_date": "2026-09-07 12:30",
+      "due_date": "2026-09-08 12:30",
+      "loan_days": 1,
+      "return_status": "PENDING_APPROVAL",
+      "return_date": "2026-09-07 12:31",
+      "approved_by_admin": null,
+      "fine_amount": 0.0
+    },
+    "LN-00033": {
+      "loan_id": "LN-00033",
+      "user_id": "U0001",
+      "isbn": "9780735211292",
+      "issue_date": "2026-09-07 12:31",
+      "due_date": "2026-09-08 12:31",
+      "loan_days": 1,
+      "return_status": "ISSUED",
+      "return_date": null,
+      "approved_by_admin": null,
+      "fine_amount": 0.0
+    },
+    "LN-00034": {
+      "loan_id": "LN-00034",
+      "user_id": "U0001",
+      "isbn": "9780134494166",
+      "issue_date": "2026-09-07 13:13",
+      "due_date": "2026-09-21 13:13",
+      "loan_days": 14,
+      "return_status": "ISSUED",
+      "return_date": null,
+      "approved_by_admin": null,
+      "fine_amount": 0.0
+    },
+    "LN-00035": {
+      "loan_id": "LN-00035",
+      "user_id": "U0002",
+      "isbn": "9780141439518",
+      "issue_date": "2026-09-07 13:16",
+      "due_date": "2026-09-09 13:16",
+      "loan_days": 2,
+      "return_status": "ISSUED",
+      "return_date": null,
+      "approved_by_admin": null,
+      "fine_amount": 0.0
+    },
+    "LN-00036": {
+      "loan_id": "LN-00036",
+      "user_id": "U0002",
+      "isbn": "9780140449136",
+      "issue_date": "2026-09-07 13:22",
+      "due_date": "2026-09-09 13:22",
+      "loan_days": 2,
+      "return_status": "RETURNED",
+      "return_date": "2026-09-07 13:36",
+      "approved_by_admin": "A002",
+      "fine_amount": 15.0
+    },
+    "LN-00037": {
+      "loan_id": "LN-00037",
+      "user_id": "U0002",
+      "isbn": "9780132350884",
+      "issue_date": "2026-09-07 13:25",
+      "due_date": "2026-09-11 13:25",
+      "loan_days": 4,
+      "return_status": "ISSUED",
+      "return_date": null,
+      "approved_by_admin": null,
+      "fine_amount": 0.0
+    },
+    "LN-00038": {
+      "loan_id": "LN-00038",
+      "user_id": "U0002",
+      "isbn": "9780743273565",
+      "issue_date": "2026-09-07 13:36",
+      "due_date": "2026-09-11 13:36",
+      "loan_days": 4,
+      "return_status": "ISSUED",
+      "return_date": null,
+      "approved_by_admin": null,
+      "fine_amount": 0.0
+    }
+  },
+  "reservations": [
+    {
+      "reservation_id": "RES-00001",
+      "user_id": "U0002",
+      "isbn": "9780691124186",
+      "requested_at": "2026-09-05 14:00",
+      "status": "PENDING"
+    },
+    {
+      "reservation_id": "RES-00002",
+      "user_id": "U0013",
+      "isbn": "9780262033848",
+      "requested_at": "2026-09-05 15:30",
+      "status": "NOTIFIED"
+    }
+  ]
+}
