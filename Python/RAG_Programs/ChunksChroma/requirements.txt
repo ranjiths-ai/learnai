@@ -1,2 +1,4 @@
 chromadb>=0.5
 streamlit>=1.30
+pypdf>=5.0
+tiktoken>=0.8

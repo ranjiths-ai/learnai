@@ -104,3 +104,9 @@ shape:
 Keep `category`/`subcategory` short and deliberate — that's what Stage 1
 keyword filtering runs against. Don't put the chunk's own content into
 metadata; only the `text` field should hold the actual passage.
+
+
+
+## Size based chunking - Prompt
+Generate a sized based chunkig. Lets go with 300 tokens per size. Plan and suggest the design
+I dont want the splitting or chunking as per the headings or sub headings, I dont want meta data as well. replan generate a new python file with the code
