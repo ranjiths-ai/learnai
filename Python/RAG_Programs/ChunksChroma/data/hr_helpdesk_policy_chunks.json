@@ -1,0 +1,152 @@
+[
+  {
+    "chunk_id": "chunk_01",
+    "category": "employee_leave_policy",
+    "subcategory": "purpose",
+    "description": "This policy defines the types of leave available to employees, eligibility criteria, and the process for requesting and approving leave. It ensures a fair, transparent, and consistent approach to time away from work across the organization."
+  },
+  {
+    "chunk_id": "chunk_02",
+    "category": "employee_leave_policy",
+    "subcategory": "eligibility",
+    "description": "All employees on the permanent payroll are eligible for leave benefits from their date of joining, unless otherwise specified. Leave for employees on probation, contract, or internship may be governed by separate terms in their offer letter."
+  },
+  {
+    "chunk_id": "chunk_03",
+    "category": "employee_leave_policy",
+    "subcategory": "leave_types_and_entitlement",
+    "description": "Casual Leave (CL): 12 days/year, for short personal matters, max 3 consecutive days without prior approval. Sick Leave (SL): 10 days/year, medical certificate required beyond 2 consecutive days. Earned/Privilege Leave (EL): 18 days/year, accrued monthly, requires 3 working days' advance notice. Public Holidays: as per the annual calendar published by HR at the start of each year. Bereavement Leave: 5 days for immediate family, on production of supporting documentation. Leave Without Pay (LWP): case-by-case, subject to manager and HR approval."
+  },
+  {
+    "chunk_id": "chunk_04",
+    "category": "employee_leave_policy",
+    "subcategory": "leave_application_process",
+    "description": "Leave requests must be submitted through the HR Helpdesk / HRMS portal in advance, except in cases of medical emergency. Sick leave availed without prior notice must be informed to the reporting manager on the same day, where possible. All leave requires approval from the employee's reporting manager; HR will be notified automatically once approved. Leave taken without approval will be treated as unauthorized absence and may attract disciplinary action or loss of pay."
+  },
+  {
+    "chunk_id": "chunk_05",
+    "category": "employee_leave_policy",
+    "subcategory": "carry_forward_and_encashment",
+    "description": "Unused Earned Leave (EL) may be carried forward up to a maximum of 30 days into the next calendar year. Casual Leave (CL) and Sick Leave (SL) do not carry forward and lapse at the end of the calendar year. Leave encashment, where applicable, will be processed as per the compensation policy at the time of exit or year-end, subject to management approval."
+  },
+  {
+    "chunk_id": "chunk_06",
+    "category": "employee_leave_policy",
+    "subcategory": "unauthorized_absence",
+    "description": "An employee absent from work for more than 3 consecutive days without approval or intimation to their manager and HR may be treated as having abandoned employment, subject to due process under the company's disciplinary policy. Specific entitlement numbers should be reviewed and aligned with local labor law requirements applicable to each office location."
+  },
+  {
+    "chunk_id": "chunk_07",
+    "category": "maternity_policy",
+    "subcategory": "purpose",
+    "description": "The company is committed to supporting employees through pregnancy, childbirth, and the transition back to work. This policy outlines maternity leave entitlements, related benefits, and support measures available to women employees."
+  },
+  {
+    "chunk_id": "chunk_08",
+    "category": "maternity_policy",
+    "subcategory": "eligibility",
+    "description": "Female employees who have completed the minimum qualifying period of service, as prescribed under applicable local maternity benefit legislation, are eligible for maternity leave and associated benefits. Employees are encouraged to inform HR and their manager as early as possible upon confirmation of pregnancy to enable planning and support."
+  },
+  {
+    "chunk_id": "chunk_09",
+    "category": "maternity_policy",
+    "subcategory": "maternity_leave_entitlement",
+    "description": "Up to 26 weeks of paid maternity leave for the first two children, in line with applicable statutory requirements. Up to 12 weeks of paid maternity leave for the third child onward, where applicable by law. Maternity leave may commence up to 8 weeks before the expected date of delivery, at the employee's discretion. In the event of a miscarriage or medical termination of pregnancy, the employee is entitled to paid leave as prescribed under applicable law, on production of a medical certificate. Adoptive and commissioning mothers are entitled to leave as per applicable statutory provisions."
+  },
+  {
+    "chunk_id": "chunk_10",
+    "category": "maternity_policy",
+    "subcategory": "prenatal_and_postnatal_support",
+    "description": "Reasonable time off will be granted for prenatal medical appointments and check-ups. Employees may request ergonomic adjustments or modified duties during pregnancy in consultation with HR and their manager. Where the organization employs 50 or more employees, crèche facilities or reimbursement support may be made available as per policy in force."
+  },
+  {
+    "chunk_id": "chunk_11",
+    "category": "maternity_policy",
+    "subcategory": "paternity_and_partner_support",
+    "description": "The company also provides paternity leave to support partners around the time of childbirth or adoption. Details of paternity leave duration and eligibility are available on the HR Helpdesk portal."
+  },
+  {
+    "chunk_id": "chunk_12",
+    "category": "maternity_policy",
+    "subcategory": "returning_to_work",
+    "description": "Employees returning from maternity leave may request flexible or hybrid work arrangements for a transition period, subject to role requirements and manager approval. Women returning to work are guaranteed reinstatement to the same or an equivalent role with no change to pay, seniority, or benefits. HR will conduct a return-to-work check-in within the first month to support a smooth transition. Maternity benefit entitlements are subject to the statutory minimums applicable in the employee's country/state of employment; where local law provides for greater benefits, the local law will prevail."
+  },
+  {
+    "chunk_id": "chunk_13",
+    "category": "remote_work_policy",
+    "subcategory": "purpose",
+    "description": "This policy sets expectations for employees who work remotely, either on a full-time or hybrid basis, to ensure productivity, security, and consistent collaboration across teams."
+  },
+  {
+    "chunk_id": "chunk_14",
+    "category": "remote_work_policy",
+    "subcategory": "eligibility_and_approval",
+    "description": "Remote work arrangements must be approved by the employee's reporting manager and recorded with HR. Eligibility depends on role requirements, business needs, and satisfactory performance; not all roles may be eligible for full remote work. Hybrid employees are expected to be present in the office on designated days as communicated by their team/department."
+  },
+  {
+    "chunk_id": "chunk_15",
+    "category": "remote_work_policy",
+    "subcategory": "working_hours_and_availability",
+    "description": "Employees must be reachable during core business hours as defined by their team, generally 10:00 AM to 4:00 PM local time. Employees should maintain their calendar status accurately and communicate planned absences in advance. Attendance at scheduled meetings (video-on, where required) is expected regardless of location."
+  },
+  {
+    "chunk_id": "chunk_16",
+    "category": "remote_work_policy",
+    "subcategory": "equipment_and_workspace",
+    "description": "The company will provide a laptop and necessary software/tools required to perform the job remotely. Employees are responsible for maintaining a safe, quiet, and reasonably professional workspace with stable internet connectivity. Any additional equipment requests should be routed through the IT Helpdesk for evaluation and approval."
+  },
+  {
+    "chunk_id": "chunk_17",
+    "category": "remote_work_policy",
+    "subcategory": "data_security_and_confidentiality",
+    "description": "Company data must only be accessed through approved devices, VPN, and authentication methods provided by IT. Employees must not share confidential company information over personal or unsecured networks/devices. Any lost/stolen device or suspected security breach must be reported to IT Security immediately."
+  },
+  {
+    "chunk_id": "chunk_18",
+    "category": "remote_work_policy",
+    "subcategory": "performance_and_communication",
+    "description": "Remote employees are evaluated on the same performance standards and deliverables as in-office employees. Regular check-ins with managers and use of designated collaboration tools (email, chat, video conferencing) are expected. Managers and employees should jointly agree on communication norms and response-time expectations."
+  },
+  {
+    "chunk_id": "chunk_19",
+    "category": "remote_work_policy",
+    "subcategory": "policy_review",
+    "description": "Remote work arrangements are reviewed periodically and may be revised based on business needs, role changes, or performance. The company reserves the right to modify or withdraw remote work privileges with reasonable notice."
+  },
+  {
+    "chunk_id": "chunk_20",
+    "category": "insurance_benefits_policy",
+    "subcategory": "purpose",
+    "description": "The company provides a group insurance program to support employees' health and financial security. This section summarizes the insurance benefits available; full policy documents and sum-insured details are available on the HR Helpdesk portal."
+  },
+  {
+    "chunk_id": "chunk_21",
+    "category": "insurance_benefits_policy",
+    "subcategory": "summary_of_benefits",
+    "description": "Group Mediclaim (GMC): sum insured as per current policy schedule, covering the employee, spouse, up to 2 dependent children, and dependent parents (per policy tier). Group Personal Accident (GPA): covers accidental death and permanent disability for the employee. Group Term Life Insurance (GTLI): a multiple of annual base salary, with the nominee receiving the payout. Maternity Cover: in-patient maternity and newborn cover as per policy limits, for insured female employees and insured spouses."
+  },
+  {
+    "chunk_id": "chunk_22",
+    "category": "insurance_benefits_policy",
+    "subcategory": "enrollment_and_nomination",
+    "description": "New employees are enrolled in applicable insurance schemes from their date of joining, subject to insurer onboarding timelines. Employees must submit dependent details and nominee information through the HR Helpdesk portal within 15 days of joining. Changes to dependents (e.g., marriage, childbirth) must be updated within 30 days of the life event to ensure continuous coverage."
+  },
+  {
+    "chunk_id": "chunk_23",
+    "category": "insurance_benefits_policy",
+    "subcategory": "claims_process",
+    "description": "Cashless treatment is available at network hospitals; employees should present their insurance ID card at admission. For reimbursement claims, original bills and discharge summary must be submitted to HR within 30 days of treatment. HR / the insurance TPA (Third Party Administrator) will assist with claim tracking and resolution of queries."
+  },
+  {
+    "chunk_id": "chunk_24",
+    "category": "insurance_benefits_policy",
+    "subcategory": "exclusions_and_limitations",
+    "description": "Coverage is subject to the terms, conditions, and exclusions defined in the master insurance policy document issued by the insurer, including waiting periods for certain pre-existing conditions. Employees are encouraged to review the detailed policy wording available on the HR Helpdesk portal."
+  },
+  {
+    "chunk_id": "chunk_25",
+    "category": "insurance_benefits_policy",
+    "subcategory": "support",
+    "description": "For any questions regarding enrollment, claims, or coverage, employees can raise a ticket with the HR Helpdesk or contact the designated insurance point of contact listed on the intranet. Sum insured values, dependent limits, and TPA details vary by policy year and should be confirmed against the current insurance policy schedule circulated by HR."
+  }
+]
