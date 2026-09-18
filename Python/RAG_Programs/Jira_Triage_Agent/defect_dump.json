@@ -1,0 +1,1002 @@
+[
+  {
+    "issue_key": "SCRUM-207",
+    "issue_id": "10902",
+    "issue_type": "Bug",
+    "summary": "Dash Board shows wrong US currency Formate",
+    "description": "When the dashboard page got launched, my profile loading as Japanese currency",
+    "fix": "N/A",
+    "root_cause": "Mapped wrongly in the currency table locations",
+    "defect_id": "DEF-0101"
+  },
+  {
+    "issue_key": "SCRUM-206",
+    "issue_id": "10869",
+    "issue_type": "Bug",
+    "summary": "Settings Page loses session unexpectedly",
+    "description": "When using the Settings Page feature, the system loses session unexpectedly. This occurs consistently when specific edge-case inputs are provided, impacting end users.",
+    "fix": "Corrected session timeout configuration and refresh logic",
+    "root_cause": "Session token expiry misconfigured",
+    "defect_id": "DEF-0100"
+  },
+  {
+    "issue_key": "SCRUM-205",
+    "issue_id": "10868",
+    "issue_type": "Bug",
+    "summary": "Reporting does not send notification",
+    "description": "When using the Reporting feature, the system does not send notification. This occurs consistently when the user performs the action under normal load, impacting client operations.",
+    "fix": "Added retry mechanism with exponential backoff",
+    "root_cause": "Notification service timeout not handled gracefully",
+    "defect_id": "DEF-0099"
+  },
+  {
+    "issue_key": "SCRUM-204",
+    "issue_id": "10867",
+    "issue_type": "Bug",
+    "summary": "Invoice Generation crashes intermittently",
+    "description": "When using the Invoice Generation feature, the system crashes intermittently. This occurs consistently when the feature is used after a recent deployment, impacting business reporting.",
+    "fix": "Refactored connection handling to use try-with-resources pattern",
+    "root_cause": "Memory leak caused by unclosed database connections",
+    "defect_id": "DEF-0098"
+  },
+  {
+    "issue_key": "SCRUM-203",
+    "issue_id": "10866",
+    "issue_type": "Bug",
+    "summary": "Authentication does not sync properly",
+    "description": "When using the Authentication feature, the system does not sync properly. This occurs consistently when specific edge-case inputs are provided, impacting client operations.",
+    "fix": "Implemented throttling and queued sync requests",
+    "root_cause": "API rate limiting not handled during bulk sync",
+    "defect_id": "DEF-0097"
+  },
+  {
+    "issue_key": "SCRUM-202",
+    "issue_id": "10865",
+    "issue_type": "Bug",
+    "summary": "Search shows UI misalignment",
+    "description": "When using the Search feature, the system shows UI misalignment. This occurs consistently when the user performs the action under normal load, impacting client operations.",
+    "fix": "Isolated component styles using scoped CSS classes",
+    "root_cause": "CSS conflict introduced by a recent style sheet change",
+    "defect_id": "DEF-0096"
+  },
+  {
+    "issue_key": "SCRUM-201",
+    "issue_id": "10864",
+    "issue_type": "Bug",
+    "summary": "Authentication does not sync properly",
+    "description": "When using the Authentication feature, the system does not sync properly. This occurs consistently when the feature is used after a recent deployment, impacting end users.",
+    "fix": "Implemented throttling and queued sync requests",
+    "root_cause": "API rate limiting not handled during bulk sync",
+    "defect_id": "DEF-0095"
+  },
+  {
+    "issue_key": "SCRUM-200",
+    "issue_id": "10863",
+    "issue_type": "Bug",
+    "summary": "Data Sync shows UI misalignment",
+    "description": "When using the Data Sync feature, the system shows UI misalignment. This occurs consistently when specific edge-case inputs are provided, impacting end users.",
+    "fix": "Isolated component styles using scoped CSS classes",
+    "root_cause": "CSS conflict introduced by a recent style sheet change",
+    "defect_id": "DEF-0094"
+  },
+  {
+    "issue_key": "SCRUM-199",
+    "issue_id": "10862",
+    "issue_type": "Bug",
+    "summary": "File Upload throws an error on submit",
+    "description": "When using the File Upload feature, the system throws an error on submit. This occurs consistently when specific edge-case inputs are provided, impacting end users.",
+    "fix": "Implemented client and server-side validation for all required fields",
+    "root_cause": "Missing input validation causing server-side exception",
+    "defect_id": "DEF-0093"
+  },
+  {
+    "issue_key": "SCRUM-198",
+    "issue_id": "10861",
+    "issue_type": "Bug",
+    "summary": "Export Feature does not validate file type",
+    "description": "When using the Export Feature feature, the system does not validate file type. This occurs consistently when the feature is used after a recent deployment, impacting business reporting.",
+    "fix": "Added server-side MIME type and extension validation",
+    "root_cause": "File upload validation bypassed on client-side only",
+    "defect_id": "DEF-0092"
+  },
+  {
+    "issue_key": "SCRUM-197",
+    "issue_id": "10860",
+    "issue_type": "Bug",
+    "summary": "Dashboard duplicates records",
+    "description": "When using the Dashboard feature, the system duplicates records. This occurs consistently when the user performs the action under normal load, impacting client operations.",
+    "fix": "Added unique database constraint and duplicate check logic",
+    "root_cause": "Missing unique constraint allowing duplicate inserts",
+    "defect_id": "DEF-0091"
+  },
+  {
+    "issue_key": "SCRUM-196",
+    "issue_id": "10859",
+    "issue_type": "Bug",
+    "summary": "Notifications does not send notification",
+    "description": "When using the Notifications feature, the system does not send notification. This occurs consistently when specific edge-case inputs are provided, impacting client operations.",
+    "fix": "Added retry mechanism with exponential backoff",
+    "root_cause": "Notification service timeout not handled gracefully",
+    "defect_id": "DEF-0090"
+  },
+  {
+    "issue_key": "SCRUM-195",
+    "issue_id": "10858",
+    "issue_type": "Bug",
+    "summary": "Login returns 500 error",
+    "description": "When using the Login feature, the system returns 500 error. This occurs consistently when the user performs the action under normal load, impacting internal testers.",
+    "fix": "Added defensive null checks and proper exception handling",
+    "root_cause": "Unhandled null pointer exception in backend service",
+    "defect_id": "DEF-0089"
+  },
+  {
+    "issue_key": "SCRUM-194",
+    "issue_id": "10857",
+    "issue_type": "Bug",
+    "summary": "Checkout crashes intermittently",
+    "description": "When using the Checkout feature, the system crashes intermittently. This occurs consistently when multiple users access it simultaneously, impacting end users.",
+    "fix": "Refactored connection handling to use try-with-resources pattern",
+    "root_cause": "Memory leak caused by unclosed database connections",
+    "defect_id": "DEF-0088"
+  },
+  {
+    "issue_key": "SCRUM-193",
+    "issue_id": "10856",
+    "issue_type": "Bug",
+    "summary": "Order Management does not sync properly",
+    "description": "When using the Order Management feature, the system does not sync properly. This occurs consistently when multiple users access it simultaneously, impacting business reporting.",
+    "fix": "Implemented throttling and queued sync requests",
+    "root_cause": "API rate limiting not handled during bulk sync",
+    "defect_id": "DEF-0087"
+  },
+  {
+    "issue_key": "SCRUM-192",
+    "issue_id": "10855",
+    "issue_type": "Bug",
+    "summary": "Notifications does not send notification",
+    "description": "When using the Notifications feature, the system does not send notification. This occurs consistently when specific edge-case inputs are provided, impacting client operations.",
+    "fix": "Added retry mechanism with exponential backoff",
+    "root_cause": "Notification service timeout not handled gracefully",
+    "defect_id": "DEF-0086"
+  },
+  {
+    "issue_key": "SCRUM-191",
+    "issue_id": "10854",
+    "issue_type": "Bug",
+    "summary": "Authentication displays incorrect data",
+    "description": "When using the Authentication feature, the system displays incorrect data. This occurs consistently when the feature is used after a recent deployment, impacting internal testers.",
+    "fix": "Added cache invalidation logic triggered on update events",
+    "root_cause": "Stale cache not invalidated after data update",
+    "defect_id": "DEF-0085"
+  },
+  {
+    "issue_key": "SCRUM-190",
+    "issue_id": "10853",
+    "issue_type": "Bug",
+    "summary": "Settings Page allows unauthorized access",
+    "description": "When using the Settings Page feature, the system allows unauthorized access. This occurs consistently when multiple users access it simultaneously, impacting business reporting.",
+    "fix": "Added authorization middleware to enforce role checks",
+    "root_cause": "Missing role-based access check on API endpoint",
+    "defect_id": "DEF-0084"
+  },
+  {
+    "issue_key": "SCRUM-189",
+    "issue_id": "10852",
+    "issue_type": "Bug",
+    "summary": "Login shows UI misalignment",
+    "description": "When using the Login feature, the system shows UI misalignment. This occurs consistently when specific edge-case inputs are provided, impacting business reporting.",
+    "fix": "Isolated component styles using scoped CSS classes",
+    "root_cause": "CSS conflict introduced by a recent style sheet change",
+    "defect_id": "DEF-0083"
+  },
+  {
+    "issue_key": "SCRUM-188",
+    "issue_id": "10851",
+    "issue_type": "Bug",
+    "summary": "Authentication allows unauthorized access",
+    "description": "When using the Authentication feature, the system allows unauthorized access. This occurs consistently when the user performs the action under normal load, impacting business reporting.",
+    "fix": "Added authorization middleware to enforce role checks",
+    "root_cause": "Missing role-based access check on API endpoint",
+    "defect_id": "DEF-0082"
+  },
+  {
+    "issue_key": "SCRUM-187",
+    "issue_id": "10850",
+    "issue_type": "Bug",
+    "summary": "Login does not sync properly",
+    "description": "When using the Login feature, the system does not sync properly. This occurs consistently when the feature is used after a recent deployment, impacting business reporting.",
+    "fix": "Implemented throttling and queued sync requests",
+    "root_cause": "API rate limiting not handled during bulk sync",
+    "defect_id": "DEF-0081"
+  },
+  {
+    "issue_key": "SCRUM-186",
+    "issue_id": "10849",
+    "issue_type": "Bug",
+    "summary": "Payment Gateway crashes intermittently",
+    "description": "When using the Payment Gateway feature, the system crashes intermittently. This occurs consistently when the feature is used after a recent deployment, impacting business reporting.",
+    "fix": "Refactored connection handling to use try-with-resources pattern",
+    "root_cause": "Memory leak caused by unclosed database connections",
+    "defect_id": "DEF-0080"
+  },
+  {
+    "issue_key": "SCRUM-185",
+    "issue_id": "10848",
+    "issue_type": "Bug",
+    "summary": "Notifications throws an error on submit",
+    "description": "When using the Notifications feature, the system throws an error on submit. This occurs consistently when the feature is used after a recent deployment, impacting business reporting.",
+    "fix": "Implemented client and server-side validation for all required fields",
+    "root_cause": "Missing input validation causing server-side exception",
+    "defect_id": "DEF-0079"
+  },
+  {
+    "issue_key": "SCRUM-184",
+    "issue_id": "10847",
+    "issue_type": "Bug",
+    "summary": "User Profile displays incorrect data",
+    "description": "When using the User Profile feature, the system displays incorrect data. This occurs consistently when the user performs the action under normal load, impacting internal testers.",
+    "fix": "Added cache invalidation logic triggered on update events",
+    "root_cause": "Stale cache not invalidated after data update",
+    "defect_id": "DEF-0078"
+  },
+  {
+    "issue_key": "SCRUM-183",
+    "issue_id": "10846",
+    "issue_type": "Bug",
+    "summary": "User Profile loses session unexpectedly",
+    "description": "When using the User Profile feature, the system loses session unexpectedly. This occurs consistently when specific edge-case inputs are provided, impacting internal testers.",
+    "fix": "Corrected session timeout configuration and refresh logic",
+    "root_cause": "Session token expiry misconfigured",
+    "defect_id": "DEF-0077"
+  },
+  {
+    "issue_key": "SCRUM-182",
+    "issue_id": "10845",
+    "issue_type": "Bug",
+    "summary": "File Upload does not sync properly",
+    "description": "When using the File Upload feature, the system does not sync properly. This occurs consistently when specific edge-case inputs are provided, impacting business reporting.",
+    "fix": "Implemented throttling and queued sync requests",
+    "root_cause": "API rate limiting not handled during bulk sync",
+    "defect_id": "DEF-0076"
+  },
+  {
+    "issue_key": "SCRUM-181",
+    "issue_id": "10844",
+    "issue_type": "Bug",
+    "summary": "Mobile App shows UI misalignment",
+    "description": "When using the Mobile App feature, the system shows UI misalignment. This occurs consistently when the feature is used after a recent deployment, impacting internal testers.",
+    "fix": "Isolated component styles using scoped CSS classes",
+    "root_cause": "CSS conflict introduced by a recent style sheet change",
+    "defect_id": "DEF-0075"
+  },
+  {
+    "issue_key": "SCRUM-180",
+    "issue_id": "10843",
+    "issue_type": "Bug",
+    "summary": "Invoice Generation displays incorrect data",
+    "description": "When using the Invoice Generation feature, the system displays incorrect data. This occurs consistently when the feature is used after a recent deployment, impacting client operations.",
+    "fix": "Added cache invalidation logic triggered on update events",
+    "root_cause": "Stale cache not invalidated after data update",
+    "defect_id": "DEF-0074"
+  },
+  {
+    "issue_key": "SCRUM-179",
+    "issue_id": "10842",
+    "issue_type": "Bug",
+    "summary": "Authentication crashes intermittently",
+    "description": "When using the Authentication feature, the system crashes intermittently. This occurs consistently when the user performs the action under normal load, impacting business reporting.",
+    "fix": "Refactored connection handling to use try-with-resources pattern",
+    "root_cause": "Memory leak caused by unclosed database connections",
+    "defect_id": "DEF-0073"
+  },
+  {
+    "issue_key": "SCRUM-178",
+    "issue_id": "10841",
+    "issue_type": "Bug",
+    "summary": "Admin Panel does not send notification",
+    "description": "When using the Admin Panel feature, the system does not send notification. This occurs consistently when the feature is used after a recent deployment, impacting internal testers.",
+    "fix": "Added retry mechanism with exponential backoff",
+    "root_cause": "Notification service timeout not handled gracefully",
+    "defect_id": "DEF-0072"
+  },
+  {
+    "issue_key": "SCRUM-177",
+    "issue_id": "10840",
+    "issue_type": "Bug",
+    "summary": "Payment Gateway crashes intermittently",
+    "description": "When using the Payment Gateway feature, the system crashes intermittently. This occurs consistently when the feature is used after a recent deployment, impacting end users.",
+    "fix": "Refactored connection handling to use try-with-resources pattern",
+    "root_cause": "Memory leak caused by unclosed database connections",
+    "defect_id": "DEF-0071"
+  },
+  {
+    "issue_key": "SCRUM-176",
+    "issue_id": "10839",
+    "issue_type": "Bug",
+    "summary": "User Profile does not sync properly",
+    "description": "When using the User Profile feature, the system does not sync properly. This occurs consistently when the user performs the action under normal load, impacting client operations.",
+    "fix": "Implemented throttling and queued sync requests",
+    "root_cause": "API rate limiting not handled during bulk sync",
+    "defect_id": "DEF-0070"
+  },
+  {
+    "issue_key": "SCRUM-175",
+    "issue_id": "10838",
+    "issue_type": "Bug",
+    "summary": "Email Service duplicates records",
+    "description": "When using the Email Service feature, the system duplicates records. This occurs consistently when the user performs the action under normal load, impacting end users.",
+    "fix": "Added unique database constraint and duplicate check logic",
+    "root_cause": "Missing unique constraint allowing duplicate inserts",
+    "defect_id": "DEF-0069"
+  },
+  {
+    "issue_key": "SCRUM-174",
+    "issue_id": "10837",
+    "issue_type": "Bug",
+    "summary": "Export Feature returns 500 error",
+    "description": "When using the Export Feature feature, the system returns 500 error. This occurs consistently when specific edge-case inputs are provided, impacting business reporting.",
+    "fix": "Added defensive null checks and proper exception handling",
+    "root_cause": "Unhandled null pointer exception in backend service",
+    "defect_id": "DEF-0068"
+  },
+  {
+    "issue_key": "SCRUM-173",
+    "issue_id": "10836",
+    "issue_type": "Bug",
+    "summary": "Export Feature is slow to respond",
+    "description": "When using the Export Feature feature, the system is slow to respond. This occurs consistently when the feature is used after a recent deployment, impacting end users.",
+    "fix": "Added appropriate indexes and optimized the query",
+    "root_cause": "Unoptimized SQL query causing full table scan",
+    "defect_id": "DEF-0067"
+  },
+  {
+    "issue_key": "SCRUM-172",
+    "issue_id": "10835",
+    "issue_type": "Bug",
+    "summary": "Search crashes intermittently",
+    "description": "When using the Search feature, the system crashes intermittently. This occurs consistently when the feature is used after a recent deployment, impacting business reporting.",
+    "fix": "Refactored connection handling to use try-with-resources pattern",
+    "root_cause": "Memory leak caused by unclosed database connections",
+    "defect_id": "DEF-0066"
+  },
+  {
+    "issue_key": "SCRUM-171",
+    "issue_id": "10834",
+    "issue_type": "Bug",
+    "summary": "API Integration does not validate file type",
+    "description": "When using the API Integration feature, the system does not validate file type. This occurs consistently when the feature is used after a recent deployment, impacting client operations.",
+    "fix": "Added server-side MIME type and extension validation",
+    "root_cause": "File upload validation bypassed on client-side only",
+    "defect_id": "DEF-0065"
+  },
+  {
+    "issue_key": "SCRUM-170",
+    "issue_id": "10833",
+    "issue_type": "Bug",
+    "summary": "Authentication throws an error on submit",
+    "description": "When using the Authentication feature, the system throws an error on submit. This occurs consistently when specific edge-case inputs are provided, impacting client operations.",
+    "fix": "Implemented client and server-side validation for all required fields",
+    "root_cause": "Missing input validation causing server-side exception",
+    "defect_id": "DEF-0064"
+  },
+  {
+    "issue_key": "SCRUM-169",
+    "issue_id": "10832",
+    "issue_type": "Bug",
+    "summary": "Payment Gateway loses session unexpectedly",
+    "description": "When using the Payment Gateway feature, the system loses session unexpectedly. This occurs consistently when the feature is used after a recent deployment, impacting end users.",
+    "fix": "Corrected session timeout configuration and refresh logic",
+    "root_cause": "Session token expiry misconfigured",
+    "defect_id": "DEF-0063"
+  },
+  {
+    "issue_key": "SCRUM-168",
+    "issue_id": "10831",
+    "issue_type": "Bug",
+    "summary": "Settings Page allows unauthorized access",
+    "description": "When using the Settings Page feature, the system allows unauthorized access. This occurs consistently when multiple users access it simultaneously, impacting business reporting.",
+    "fix": "Added authorization middleware to enforce role checks",
+    "root_cause": "Missing role-based access check on API endpoint",
+    "defect_id": "DEF-0062"
+  },
+  {
+    "issue_key": "SCRUM-167",
+    "issue_id": "10830",
+    "issue_type": "Bug",
+    "summary": "Order Management does not load",
+    "description": "When using the Order Management feature, the system does not load. This occurs consistently when multiple users access it simultaneously, impacting business reporting.",
+    "fix": "Added null checks and proper error handling in the Order Management module",
+    "root_cause": "Unhandled exception due to null reference in the Order Management controller",
+    "defect_id": "DEF-0061"
+  },
+  {
+    "issue_key": "SCRUM-166",
+    "issue_id": "10829",
+    "issue_type": "Bug",
+    "summary": "Mobile App shows UI misalignment",
+    "description": "When using the Mobile App feature, the system shows UI misalignment. This occurs consistently when specific edge-case inputs are provided, impacting end users.",
+    "fix": "Isolated component styles using scoped CSS classes",
+    "root_cause": "CSS conflict introduced by a recent style sheet change",
+    "defect_id": "DEF-0060"
+  },
+  {
+    "issue_key": "SCRUM-165",
+    "issue_id": "10828",
+    "issue_type": "Bug",
+    "summary": "Notifications shows UI misalignment",
+    "description": "When using the Notifications feature, the system shows UI misalignment. This occurs consistently when specific edge-case inputs are provided, impacting client operations.",
+    "fix": "Isolated component styles using scoped CSS classes",
+    "root_cause": "CSS conflict introduced by a recent style sheet change",
+    "defect_id": "DEF-0059"
+  },
+  {
+    "issue_key": "SCRUM-164",
+    "issue_id": "10827",
+    "issue_type": "Bug",
+    "summary": "Notifications does not sync properly",
+    "description": "When using the Notifications feature, the system does not sync properly. This occurs consistently when the feature is used after a recent deployment, impacting client operations.",
+    "fix": "Implemented throttling and queued sync requests",
+    "root_cause": "API rate limiting not handled during bulk sync",
+    "defect_id": "DEF-0058"
+  },
+  {
+    "issue_key": "SCRUM-163",
+    "issue_id": "10826",
+    "issue_type": "Bug",
+    "summary": "Reporting duplicates records",
+    "description": "When using the Reporting feature, the system duplicates records. This occurs consistently when multiple users access it simultaneously, impacting business reporting.",
+    "fix": "Added unique database constraint and duplicate check logic",
+    "root_cause": "Missing unique constraint allowing duplicate inserts",
+    "defect_id": "DEF-0057"
+  },
+  {
+    "issue_key": "SCRUM-162",
+    "issue_id": "10825",
+    "issue_type": "Bug",
+    "summary": "Authentication does not load",
+    "description": "When using the Authentication feature, the system does not load. This occurs consistently when the user performs the action under normal load, impacting client operations.",
+    "fix": "Added null checks and proper error handling in the Authentication module",
+    "root_cause": "Unhandled exception due to null reference in the Authentication controller",
+    "defect_id": "DEF-0056"
+  },
+  {
+    "issue_key": "SCRUM-161",
+    "issue_id": "10824",
+    "issue_type": "Bug",
+    "summary": "Dashboard fails to save changes",
+    "description": "When using the Dashboard feature, the system fails to save changes. This occurs consistently when the feature is used after a recent deployment, impacting internal testers.",
+    "fix": "Implemented optimistic locking to prevent conflicting writes",
+    "root_cause": "Race condition between concurrent update requests",
+    "defect_id": "DEF-0055"
+  },
+  {
+    "issue_key": "SCRUM-160",
+    "issue_id": "10823",
+    "issue_type": "Bug",
+    "summary": "Checkout shows wrong currency format",
+    "description": "When using the Checkout feature, the system shows wrong currency format. This occurs consistently when multiple users access it simultaneously, impacting client operations.",
+    "fix": "Standardized locale-based formatting across the application",
+    "root_cause": "Locale settings not applied consistently",
+    "defect_id": "DEF-0054"
+  },
+  {
+    "issue_key": "SCRUM-159",
+    "issue_id": "10822",
+    "issue_type": "Bug",
+    "summary": "Payment Gateway does not sync properly",
+    "description": "When using the Payment Gateway feature, the system does not sync properly. This occurs consistently when specific edge-case inputs are provided, impacting internal testers.",
+    "fix": "Implemented throttling and queued sync requests",
+    "root_cause": "API rate limiting not handled during bulk sync",
+    "defect_id": "DEF-0053"
+  },
+  {
+    "issue_key": "SCRUM-158",
+    "issue_id": "10821",
+    "issue_type": "Bug",
+    "summary": "Authentication allows unauthorized access",
+    "description": "When using the Authentication feature, the system allows unauthorized access. This occurs consistently when multiple users access it simultaneously, impacting end users.",
+    "fix": "Added authorization middleware to enforce role checks",
+    "root_cause": "Missing role-based access check on API endpoint",
+    "defect_id": "DEF-0052"
+  },
+  {
+    "issue_key": "SCRUM-157",
+    "issue_id": "10820",
+    "issue_type": "Bug",
+    "summary": "Login fails to save changes",
+    "description": "When using the Login feature, the system fails to save changes. This occurs consistently when the user performs the action under normal load, impacting client operations.",
+    "fix": "Implemented optimistic locking to prevent conflicting writes",
+    "root_cause": "Race condition between concurrent update requests",
+    "defect_id": "DEF-0051"
+  },
+  {
+    "issue_key": "SCRUM-156",
+    "issue_id": "10819",
+    "issue_type": "Bug",
+    "summary": "Email Service is slow to respond",
+    "description": "When using the Email Service feature, the system is slow to respond. This occurs consistently when multiple users access it simultaneously, impacting end users.",
+    "fix": "Added appropriate indexes and optimized the query",
+    "root_cause": "Unoptimized SQL query causing full table scan",
+    "defect_id": "DEF-0050"
+  },
+  {
+    "issue_key": "SCRUM-155",
+    "issue_id": "10818",
+    "issue_type": "Bug",
+    "summary": "Order Management is slow to respond",
+    "description": "When using the Order Management feature, the system is slow to respond. This occurs consistently when the user performs the action under normal load, impacting client operations.",
+    "fix": "Added appropriate indexes and optimized the query",
+    "root_cause": "Unoptimized SQL query causing full table scan",
+    "defect_id": "DEF-0049"
+  },
+  {
+    "issue_key": "SCRUM-154",
+    "issue_id": "10817",
+    "issue_type": "Bug",
+    "summary": "Dashboard shows wrong currency format",
+    "description": "When using the Dashboard feature, the system shows wrong currency format. This occurs consistently when the user performs the action under normal load, impacting client operations.",
+    "fix": "Standardized locale-based formatting across the application",
+    "root_cause": "Locale settings not applied consistently",
+    "defect_id": "DEF-0048"
+  },
+  {
+    "issue_key": "SCRUM-153",
+    "issue_id": "10816",
+    "issue_type": "Bug",
+    "summary": "Reporting does not send notification",
+    "description": "When using the Reporting feature, the system does not send notification. This occurs consistently when specific edge-case inputs are provided, impacting end users.",
+    "fix": "Added retry mechanism with exponential backoff",
+    "root_cause": "Notification service timeout not handled gracefully",
+    "defect_id": "DEF-0047"
+  },
+  {
+    "issue_key": "SCRUM-152",
+    "issue_id": "10815",
+    "issue_type": "Bug",
+    "summary": "Search shows wrong currency format",
+    "description": "When using the Search feature, the system shows wrong currency format. This occurs consistently when specific edge-case inputs are provided, impacting end users.",
+    "fix": "Standardized locale-based formatting across the application",
+    "root_cause": "Locale settings not applied consistently",
+    "defect_id": "DEF-0046"
+  },
+  {
+    "issue_key": "SCRUM-151",
+    "issue_id": "10814",
+    "issue_type": "Bug",
+    "summary": "Invoice Generation returns 500 error",
+    "description": "When using the Invoice Generation feature, the system returns 500 error. This occurs consistently when multiple users access it simultaneously, impacting end users.",
+    "fix": "Added defensive null checks and proper exception handling",
+    "root_cause": "Unhandled null pointer exception in backend service",
+    "defect_id": "DEF-0045"
+  },
+  {
+    "issue_key": "SCRUM-150",
+    "issue_id": "10813",
+    "issue_type": "Bug",
+    "summary": "Order Management shows UI misalignment",
+    "description": "When using the Order Management feature, the system shows UI misalignment. This occurs consistently when the user performs the action under normal load, impacting client operations.",
+    "fix": "Isolated component styles using scoped CSS classes",
+    "root_cause": "CSS conflict introduced by a recent style sheet change",
+    "defect_id": "DEF-0044"
+  },
+  {
+    "issue_key": "SCRUM-149",
+    "issue_id": "10812",
+    "issue_type": "Bug",
+    "summary": "Cart shows wrong currency format",
+    "description": "When using the Cart feature, the system shows wrong currency format. This occurs consistently when specific edge-case inputs are provided, impacting internal testers.",
+    "fix": "Standardized locale-based formatting across the application",
+    "root_cause": "Locale settings not applied consistently",
+    "defect_id": "DEF-0043"
+  },
+  {
+    "issue_key": "SCRUM-148",
+    "issue_id": "10811",
+    "issue_type": "Bug",
+    "summary": "Settings Page does not load",
+    "description": "When using the Settings Page feature, the system does not load. This occurs consistently when multiple users access it simultaneously, impacting business reporting.",
+    "fix": "Added null checks and proper error handling in the Settings Page module",
+    "root_cause": "Unhandled exception due to null reference in the Settings Page controller",
+    "defect_id": "DEF-0042"
+  },
+  {
+    "issue_key": "SCRUM-147",
+    "issue_id": "10810",
+    "issue_type": "Bug",
+    "summary": "Settings Page throws an error on submit",
+    "description": "When using the Settings Page feature, the system throws an error on submit. This occurs consistently when the user performs the action under normal load, impacting business reporting.",
+    "fix": "Implemented client and server-side validation for all required fields",
+    "root_cause": "Missing input validation causing server-side exception",
+    "defect_id": "DEF-0041"
+  },
+  {
+    "issue_key": "SCRUM-146",
+    "issue_id": "10809",
+    "issue_type": "Bug",
+    "summary": "Mobile App shows wrong currency format",
+    "description": "When using the Mobile App feature, the system shows wrong currency format. This occurs consistently when the user performs the action under normal load, impacting end users.",
+    "fix": "Standardized locale-based formatting across the application",
+    "root_cause": "Locale settings not applied consistently",
+    "defect_id": "DEF-0040"
+  },
+  {
+    "issue_key": "SCRUM-145",
+    "issue_id": "10808",
+    "issue_type": "Bug",
+    "summary": "Export Feature loses session unexpectedly",
+    "description": "When using the Export Feature feature, the system loses session unexpectedly. This occurs consistently when multiple users access it simultaneously, impacting client operations.",
+    "fix": "Corrected session timeout configuration and refresh logic",
+    "root_cause": "Session token expiry misconfigured",
+    "defect_id": "DEF-0039"
+  },
+  {
+    "issue_key": "SCRUM-144",
+    "issue_id": "10807",
+    "issue_type": "Bug",
+    "summary": "Authentication loses session unexpectedly",
+    "description": "When using the Authentication feature, the system loses session unexpectedly. This occurs consistently when the feature is used after a recent deployment, impacting internal testers.",
+    "fix": "Corrected session timeout configuration and refresh logic",
+    "root_cause": "Session token expiry misconfigured",
+    "defect_id": "DEF-0038"
+  },
+  {
+    "issue_key": "SCRUM-143",
+    "issue_id": "10806",
+    "issue_type": "Bug",
+    "summary": "Admin Panel does not load",
+    "description": "When using the Admin Panel feature, the system does not load. This occurs consistently when the feature is used after a recent deployment, impacting client operations.",
+    "fix": "Added null checks and proper error handling in the Admin Panel module",
+    "root_cause": "Unhandled exception due to null reference in the Admin Panel controller",
+    "defect_id": "DEF-0037"
+  },
+  {
+    "issue_key": "SCRUM-142",
+    "issue_id": "10805",
+    "issue_type": "Bug",
+    "summary": "Authentication does not send notification",
+    "description": "When using the Authentication feature, the system does not send notification. This occurs consistently when the feature is used after a recent deployment, impacting internal testers.",
+    "fix": "Added retry mechanism with exponential backoff",
+    "root_cause": "Notification service timeout not handled gracefully",
+    "defect_id": "DEF-0036"
+  },
+  {
+    "issue_key": "SCRUM-141",
+    "issue_id": "10804",
+    "issue_type": "Bug",
+    "summary": "Data Sync does not sync properly",
+    "description": "When using the Data Sync feature, the system does not sync properly. This occurs consistently when multiple users access it simultaneously, impacting end users.",
+    "fix": "Implemented throttling and queued sync requests",
+    "root_cause": "API rate limiting not handled during bulk sync",
+    "defect_id": "DEF-0035"
+  },
+  {
+    "issue_key": "SCRUM-140",
+    "issue_id": "10803",
+    "issue_type": "Bug",
+    "summary": "Invoice Generation crashes intermittently",
+    "description": "When using the Invoice Generation feature, the system crashes intermittently. This occurs consistently when multiple users access it simultaneously, impacting business reporting.",
+    "fix": "Refactored connection handling to use try-with-resources pattern",
+    "root_cause": "Memory leak caused by unclosed database connections",
+    "defect_id": "DEF-0034"
+  },
+  {
+    "issue_key": "SCRUM-139",
+    "issue_id": "10802",
+    "issue_type": "Bug",
+    "summary": "File Upload crashes intermittently",
+    "description": "When using the File Upload feature, the system crashes intermittently. This occurs consistently when the user performs the action under normal load, impacting business reporting.",
+    "fix": "Refactored connection handling to use try-with-resources pattern",
+    "root_cause": "Memory leak caused by unclosed database connections",
+    "defect_id": "DEF-0033"
+  },
+  {
+    "issue_key": "SCRUM-138",
+    "issue_id": "10801",
+    "issue_type": "Bug",
+    "summary": "Payment Gateway does not validate file type",
+    "description": "When using the Payment Gateway feature, the system does not validate file type. This occurs consistently when multiple users access it simultaneously, impacting end users.",
+    "fix": "Added server-side MIME type and extension validation",
+    "root_cause": "File upload validation bypassed on client-side only",
+    "defect_id": "DEF-0032"
+  },
+  {
+    "issue_key": "SCRUM-137",
+    "issue_id": "10800",
+    "issue_type": "Bug",
+    "summary": "Notifications throws an error on submit",
+    "description": "When using the Notifications feature, the system throws an error on submit. This occurs consistently when multiple users access it simultaneously, impacting business reporting.",
+    "fix": "Implemented client and server-side validation for all required fields",
+    "root_cause": "Missing input validation causing server-side exception",
+    "defect_id": "DEF-0031"
+  },
+  {
+    "issue_key": "SCRUM-136",
+    "issue_id": "10799",
+    "issue_type": "Bug",
+    "summary": "Email Service crashes intermittently",
+    "description": "When using the Email Service feature, the system crashes intermittently. This occurs consistently when the user performs the action under normal load, impacting business reporting.",
+    "fix": "Refactored connection handling to use try-with-resources pattern",
+    "root_cause": "Memory leak caused by unclosed database connections",
+    "defect_id": "DEF-0030"
+  },
+  {
+    "issue_key": "SCRUM-135",
+    "issue_id": "10798",
+    "issue_type": "Bug",
+    "summary": "User Profile shows wrong currency format",
+    "description": "When using the User Profile feature, the system shows wrong currency format. This occurs consistently when multiple users access it simultaneously, impacting client operations.",
+    "fix": "Standardized locale-based formatting across the application",
+    "root_cause": "Locale settings not applied consistently",
+    "defect_id": "DEF-0029"
+  },
+  {
+    "issue_key": "SCRUM-134",
+    "issue_id": "10797",
+    "issue_type": "Bug",
+    "summary": "Export Feature crashes intermittently",
+    "description": "When using the Export Feature feature, the system crashes intermittently. This occurs consistently when multiple users access it simultaneously, impacting end users.",
+    "fix": "Refactored connection handling to use try-with-resources pattern",
+    "root_cause": "Memory leak caused by unclosed database connections",
+    "defect_id": "DEF-0028"
+  },
+  {
+    "issue_key": "SCRUM-133",
+    "issue_id": "10796",
+    "issue_type": "Bug",
+    "summary": "File Upload crashes intermittently",
+    "description": "When using the File Upload feature, the system crashes intermittently. This occurs consistently when multiple users access it simultaneously, impacting client operations.",
+    "fix": "Refactored connection handling to use try-with-resources pattern",
+    "root_cause": "Memory leak caused by unclosed database connections",
+    "defect_id": "DEF-0027"
+  },
+  {
+    "issue_key": "SCRUM-132",
+    "issue_id": "10795",
+    "issue_type": "Bug",
+    "summary": "API Integration shows UI misalignment",
+    "description": "When using the API Integration feature, the system shows UI misalignment. This occurs consistently when specific edge-case inputs are provided, impacting business reporting.",
+    "fix": "Isolated component styles using scoped CSS classes",
+    "root_cause": "CSS conflict introduced by a recent style sheet change",
+    "defect_id": "DEF-0026"
+  },
+  {
+    "issue_key": "SCRUM-131",
+    "issue_id": "10794",
+    "issue_type": "Bug",
+    "summary": "Reporting is slow to respond",
+    "description": "When using the Reporting feature, the system is slow to respond. This occurs consistently when the feature is used after a recent deployment, impacting internal testers.",
+    "fix": "Added appropriate indexes and optimized the query",
+    "root_cause": "Unoptimized SQL query causing full table scan",
+    "defect_id": "DEF-0025"
+  },
+  {
+    "issue_key": "SCRUM-130",
+    "issue_id": "10793",
+    "issue_type": "Bug",
+    "summary": "Email Service does not sync properly",
+    "description": "When using the Email Service feature, the system does not sync properly. This occurs consistently when multiple users access it simultaneously, impacting internal testers.",
+    "fix": "Implemented throttling and queued sync requests",
+    "root_cause": "API rate limiting not handled during bulk sync",
+    "defect_id": "DEF-0024"
+  },
+  {
+    "issue_key": "SCRUM-129",
+    "issue_id": "10792",
+    "issue_type": "Bug",
+    "summary": "API Integration crashes intermittently",
+    "description": "When using the API Integration feature, the system crashes intermittently. This occurs consistently when multiple users access it simultaneously, impacting internal testers.",
+    "fix": "Refactored connection handling to use try-with-resources pattern",
+    "root_cause": "Memory leak caused by unclosed database connections",
+    "defect_id": "DEF-0023"
+  },
+  {
+    "issue_key": "SCRUM-128",
+    "issue_id": "10791",
+    "issue_type": "Bug",
+    "summary": "Mobile App shows wrong currency format",
+    "description": "When using the Mobile App feature, the system shows wrong currency format. This occurs consistently when multiple users access it simultaneously, impacting client operations.",
+    "fix": "Standardized locale-based formatting across the application",
+    "root_cause": "Locale settings not applied consistently",
+    "defect_id": "DEF-0022"
+  },
+  {
+    "issue_key": "SCRUM-127",
+    "issue_id": "10790",
+    "issue_type": "Bug",
+    "summary": "Mobile App returns 500 error",
+    "description": "When using the Mobile App feature, the system returns 500 error. This occurs consistently when the user performs the action under normal load, impacting internal testers.",
+    "fix": "Added defensive null checks and proper exception handling",
+    "root_cause": "Unhandled null pointer exception in backend service",
+    "defect_id": "DEF-0021"
+  },
+  {
+    "issue_key": "SCRUM-126",
+    "issue_id": "10789",
+    "issue_type": "Bug",
+    "summary": "Order Management allows unauthorized access",
+    "description": "When using the Order Management feature, the system allows unauthorized access. This occurs consistently when the user performs the action under normal load, impacting end users.",
+    "fix": "Added authorization middleware to enforce role checks",
+    "root_cause": "Missing role-based access check on API endpoint",
+    "defect_id": "DEF-0020"
+  },
+  {
+    "issue_key": "SCRUM-125",
+    "issue_id": "10788",
+    "issue_type": "Bug",
+    "summary": "Cart throws an error on submit",
+    "description": "When using the Cart feature, the system throws an error on submit. This occurs consistently when specific edge-case inputs are provided, impacting business reporting.",
+    "fix": "Implemented client and server-side validation for all required fields",
+    "root_cause": "Missing input validation causing server-side exception",
+    "defect_id": "DEF-0019"
+  },
+  {
+    "issue_key": "SCRUM-124",
+    "issue_id": "10787",
+    "issue_type": "Bug",
+    "summary": "Order Management allows unauthorized access",
+    "description": "When using the Order Management feature, the system allows unauthorized access. This occurs consistently when multiple users access it simultaneously, impacting end users.",
+    "fix": "Added authorization middleware to enforce role checks",
+    "root_cause": "Missing role-based access check on API endpoint",
+    "defect_id": "DEF-0018"
+  },
+  {
+    "issue_key": "SCRUM-123",
+    "issue_id": "10786",
+    "issue_type": "Bug",
+    "summary": "Authentication returns 500 error",
+    "description": "When using the Authentication feature, the system returns 500 error. This occurs consistently when multiple users access it simultaneously, impacting business reporting.",
+    "fix": "Added defensive null checks and proper exception handling",
+    "root_cause": "Unhandled null pointer exception in backend service",
+    "defect_id": "DEF-0017"
+  },
+  {
+    "issue_key": "SCRUM-122",
+    "issue_id": "10785",
+    "issue_type": "Bug",
+    "summary": "Email Service throws an error on submit",
+    "description": "When using the Email Service feature, the system throws an error on submit. This occurs consistently when multiple users access it simultaneously, impacting end users.",
+    "fix": "Implemented client and server-side validation for all required fields",
+    "root_cause": "Missing input validation causing server-side exception",
+    "defect_id": "DEF-0016"
+  },
+  {
+    "issue_key": "SCRUM-121",
+    "issue_id": "10784",
+    "issue_type": "Bug",
+    "summary": "Order Management loses session unexpectedly",
+    "description": "When using the Order Management feature, the system loses session unexpectedly. This occurs consistently when the feature is used after a recent deployment, impacting business reporting.",
+    "fix": "Corrected session timeout configuration and refresh logic",
+    "root_cause": "Session token expiry misconfigured",
+    "defect_id": "DEF-0015"
+  },
+  {
+    "issue_key": "SCRUM-120",
+    "issue_id": "10783",
+    "issue_type": "Bug",
+    "summary": "Invoice Generation displays incorrect data",
+    "description": "When using the Invoice Generation feature, the system displays incorrect data. This occurs consistently when specific edge-case inputs are provided, impacting internal testers.",
+    "fix": "Added cache invalidation logic triggered on update events",
+    "root_cause": "Stale cache not invalidated after data update",
+    "defect_id": "DEF-0014"
+  },
+  {
+    "issue_key": "SCRUM-119",
+    "issue_id": "10782",
+    "issue_type": "Bug",
+    "summary": "Order Management throws an error on submit",
+    "description": "When using the Order Management feature, the system throws an error on submit. This occurs consistently when the user performs the action under normal load, impacting client operations.",
+    "fix": "Implemented client and server-side validation for all required fields",
+    "root_cause": "Missing input validation causing server-side exception",
+    "defect_id": "DEF-0013"
+  },
+  {
+    "issue_key": "SCRUM-118",
+    "issue_id": "10781",
+    "issue_type": "Bug",
+    "summary": "Data Sync crashes intermittently",
+    "description": "When using the Data Sync feature, the system crashes intermittently. This occurs consistently when specific edge-case inputs are provided, impacting end users.",
+    "fix": "Refactored connection handling to use try-with-resources pattern",
+    "root_cause": "Memory leak caused by unclosed database connections",
+    "defect_id": "DEF-0012"
+  },
+  {
+    "issue_key": "SCRUM-117",
+    "issue_id": "10780",
+    "issue_type": "Bug",
+    "summary": "Reporting allows unauthorized access",
+    "description": "When using the Reporting feature, the system allows unauthorized access. This occurs consistently when the user performs the action under normal load, impacting internal testers.",
+    "fix": "Added authorization middleware to enforce role checks",
+    "root_cause": "Missing role-based access check on API endpoint",
+    "defect_id": "DEF-0011"
+  },
+  {
+    "issue_key": "SCRUM-116",
+    "issue_id": "10779",
+    "issue_type": "Bug",
+    "summary": "Checkout fails to save changes",
+    "description": "When using the Checkout feature, the system fails to save changes. This occurs consistently when the user performs the action under normal load, impacting client operations.",
+    "fix": "Implemented optimistic locking to prevent conflicting writes",
+    "root_cause": "Race condition between concurrent update requests",
+    "defect_id": "DEF-0010"
+  },
+  {
+    "issue_key": "SCRUM-115",
+    "issue_id": "10778",
+    "issue_type": "Bug",
+    "summary": "File Upload does not sync properly",
+    "description": "When using the File Upload feature, the system does not sync properly. This occurs consistently when multiple users access it simultaneously, impacting business reporting.",
+    "fix": "Implemented throttling and queued sync requests",
+    "root_cause": "API rate limiting not handled during bulk sync",
+    "defect_id": "DEF-0009"
+  },
+  {
+    "issue_key": "SCRUM-114",
+    "issue_id": "10777",
+    "issue_type": "Bug",
+    "summary": "Export Feature crashes intermittently",
+    "description": "When using the Export Feature feature, the system crashes intermittently. This occurs consistently when multiple users access it simultaneously, impacting end users.",
+    "fix": "Refactored connection handling to use try-with-resources pattern",
+    "root_cause": "Memory leak caused by unclosed database connections",
+    "defect_id": "DEF-0008"
+  },
+  {
+    "issue_key": "SCRUM-113",
+    "issue_id": "10776",
+    "issue_type": "Bug",
+    "summary": "Dashboard shows wrong currency format",
+    "description": "When using the Dashboard feature, the system shows wrong currency format. This occurs consistently when the feature is used after a recent deployment, impacting end users.",
+    "fix": "Standardized locale-based formatting across the application",
+    "root_cause": "Locale settings not applied consistently",
+    "defect_id": "DEF-0007"
+  },
+  {
+    "issue_key": "SCRUM-112",
+    "issue_id": "10775",
+    "issue_type": "Bug",
+    "summary": "Checkout does not sync properly",
+    "description": "When using the Checkout feature, the system does not sync properly. This occurs consistently when specific edge-case inputs are provided, impacting client operations.",
+    "fix": "Implemented throttling and queued sync requests",
+    "root_cause": "API rate limiting not handled during bulk sync",
+    "defect_id": "DEF-0006"
+  },
+  {
+    "issue_key": "SCRUM-111",
+    "issue_id": "10774",
+    "issue_type": "Bug",
+    "summary": "Order Management displays incorrect data",
+    "description": "When using the Order Management feature, the system displays incorrect data. This occurs consistently when the user performs the action under normal load, impacting client operations.",
+    "fix": "Added cache invalidation logic triggered on update events",
+    "root_cause": "Stale cache not invalidated after data update",
+    "defect_id": "DEF-0005"
+  },
+  {
+    "issue_key": "SCRUM-110",
+    "issue_id": "10773",
+    "issue_type": "Bug",
+    "summary": "File Upload does not send notification",
+    "description": "When using the File Upload feature, the system does not send notification. This occurs consistently when specific edge-case inputs are provided, impacting end users.",
+    "fix": "Added retry mechanism with exponential backoff",
+    "root_cause": "Notification service timeout not handled gracefully",
+    "defect_id": "DEF-0004"
+  },
+  {
+    "issue_key": "SCRUM-109",
+    "issue_id": "10772",
+    "issue_type": "Bug",
+    "summary": "Mobile App returns 500 error",
+    "description": "When using the Mobile App feature, the system returns 500 error. This occurs consistently when multiple users access it simultaneously, impacting internal testers.",
+    "fix": "Added defensive null checks and proper exception handling",
+    "root_cause": "Unhandled null pointer exception in backend service",
+    "defect_id": "DEF-0003"
+  },
+  {
+    "issue_key": "SCRUM-108",
+    "issue_id": "10771",
+    "issue_type": "Bug",
+    "summary": "Data Sync throws an error on submit",
+    "description": "When using the Data Sync feature, the system throws an error on submit. This occurs consistently when the feature is used after a recent deployment, impacting end users.",
+    "fix": "Implemented client and server-side validation for all required fields",
+    "root_cause": "Missing input validation causing server-side exception",
+    "defect_id": "DEF-0002"
+  }
+]
