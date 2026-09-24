@@ -1,5 +1,25 @@
 [
   {
+    "issue_key": "SCRUM-209",
+    "issue_id": "10936",
+    "issue_type": "Bug",
+    "summary": "CLONE - Export Feature is not working",
+    "description": "When using the Export Feature feature, the system does not validate file type. This occurs consistently when the feature is used after a recent deployment, impacting business reporting.",
+    "fix": "Added server-side MIME type and extension validation",
+    "root_cause": "File upload validation bypassed on client-side only",
+    "defect_id": "DEF-0092"
+  },
+  {
+    "issue_key": "SCRUM-208",
+    "issue_id": "10935",
+    "issue_type": "Bug",
+    "summary": "Export Feature not working",
+    "description": "Export Feature not working",
+    "fix": "N/A",
+    "root_cause": "N/A",
+    "defect_id": "SCRUM-208"
+  },
+  {
     "issue_key": "SCRUM-207",
     "issue_id": "10902",
     "issue_type": "Bug",
@@ -8,16 +28,6 @@
     "fix": "N/A",
     "root_cause": "Mapped wrongly in the currency table locations",
     "defect_id": "DEF-0101"
-  },
-  {
-    "issue_key": "SCRUM-206",
-    "issue_id": "10869",
-    "issue_type": "Bug",
-    "summary": "Settings Page loses session unexpectedly",
-    "description": "When using the Settings Page feature, the system loses session unexpectedly. This occurs consistently when specific edge-case inputs are provided, impacting end users.",
-    "fix": "Corrected session timeout configuration and refresh logic",
-    "root_cause": "Session token expiry misconfigured",
-    "defect_id": "DEF-0100"
   },
   {
     "issue_key": "SCRUM-205",
@@ -68,16 +78,6 @@
     "fix": "Implemented throttling and queued sync requests",
     "root_cause": "API rate limiting not handled during bulk sync",
     "defect_id": "DEF-0095"
-  },
-  {
-    "issue_key": "SCRUM-200",
-    "issue_id": "10863",
-    "issue_type": "Bug",
-    "summary": "Data Sync shows UI misalignment",
-    "description": "When using the Data Sync feature, the system shows UI misalignment. This occurs consistently when specific edge-case inputs are provided, impacting end users.",
-    "fix": "Isolated component styles using scoped CSS classes",
-    "root_cause": "CSS conflict introduced by a recent style sheet change",
-    "defect_id": "DEF-0094"
   },
   {
     "issue_key": "SCRUM-199",
